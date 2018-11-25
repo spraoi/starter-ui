@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "name": "spraoi-ui",
+  "scripts": {
+    "build": "gatsby build",
+    "lint:js": "eslint \"src/**/*.js\"",
+    "lint:styles": "stylelint \"src/**/*.js\"",
+    "start": "gatsby develop",
+    "test": "jest"
+  },
+  "dependencies": {
+    "gatsby": "^2.0.19",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^4.1.1"
+  },
+  "devDependencies": {
+    "@spraoi/babel-preset": "^0.9.0",
+    "@spraoi/eslint-config": "^0.9.0",
+    "@spraoi/gatsby-config": "^0.9.0",
+    "@spraoi/jest-config": "^0.9.0",
+    "@spraoi/stylelint-config": "^0.9.0",
+    "eslint": "^5.9.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.2",
+    "stylelint": "^9.8.0"
+  }
+}
