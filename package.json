@@ -3,6 +3,7 @@
   "name": "spraoi-ui",
   "scripts": {
     "build": "gatsby build",
+    "clean": "rm -rf node_modules public .cache && yarn",
     "lint": "yarn lint:js && yarn lint:styles",
     "lint:js": "eslint --fix \"src/**/*.js\"",
     "lint:styles": "stylelint --fix \"src/**/*.js\"",
