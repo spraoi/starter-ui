@@ -4,7 +4,7 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "rm -rf node_modules public .cache && yarn",
-    "format": "prettier --write \"*.{js,json,md}\" \"src/**/*.{js,json,css,scss,md\"",
+    "format": "prettier --write \"*.{js,json,md}\" \"src/**/*.{js,json,css,scss,md}\"",
     "lint": "yarn lint:js && yarn lint:styles",
     "lint:js": "eslint --fix \"src/**/*.js\"",
     "lint:styles": "stylelint --fix \"src/**/*.js\"",
