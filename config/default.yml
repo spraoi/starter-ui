@@ -1,0 +1,24 @@
+amplify:
+  API:
+    endpoints:
+    -
+      endpoint:
+      name: api
+      region: us-east-1
+  Auth:
+    identityPoolId:
+    region: us-east-1
+    userPoolId:
+    userPoolWebClientId:
+  Storage:
+    bucket:
+    region: us-east-1
+
+deploy:
+  # TODO
+
+flags:
+  foo: y
+
+theme:
+  # TODO

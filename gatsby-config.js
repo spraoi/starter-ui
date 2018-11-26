@@ -4,5 +4,5 @@ module.exports = {
   ...defaults,
   siteMetadata: {
     title: 'Spraoi App'
-  },
+  }
 };
