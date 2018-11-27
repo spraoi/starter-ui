@@ -1,0 +1,12 @@
+amplify:
+  API:
+    endpoints:
+      - endpoint:
+        name: api
+  Auth:
+    identityPoolId:
+    userPoolId:
+    userPoolWebClientId:
+  Storage:
+    bucket:
+deploy:
