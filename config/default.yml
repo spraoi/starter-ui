@@ -6,3 +6,4 @@ amplify:
     region: us-east-1
   Storage:
     region: us-east-1
+theme: default
