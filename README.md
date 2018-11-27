@@ -42,7 +42,7 @@ TODO
 The directories here behave similarly to the config files in [`config/`](#config). Inheritance is as follows:
 
 1. `default/` (lowest priority)
-3. `[variation]/` (highest priority)
+2. `[variation]/` (highest priority)
 
 Instead of merging config values, though, we "merge" the pages of our app. Here's an example:
 

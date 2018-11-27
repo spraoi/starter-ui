@@ -4,7 +4,7 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "rm -rf node_modules public .cache",
-    "format": "prettier --write \"*.{js,json,md}\" \"src/**/*.{js,json,css,scss,md}\"",
+    "format": "prettier --write --ignore-path .gitignore \"**/*.{js,json,css,scss,md,yml}\"",
     "lint": "yarn lint:js && yarn lint:styles",
     "lint:js": "eslint --fix --ignore-path .gitignore \"src/**/*.js\"",
     "lint:styles": "stylelint --fix --ignore-path .gitignore \"src/**/*.js\"",
@@ -16,7 +16,7 @@
     "@spraoi/validations": "^0.12.0",
     "gatsby": "^2.0.19",
     "prop-types": "^15.6.2",
-    "react": "^16.5.1",
+    "react": "^16.6.3",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
     "styled-components": "^4.1.1"
@@ -27,7 +27,7 @@
     "@babel/runtime": "^7.1.5",
     "@spraoi/babel-preset": "^0.12.3",
     "@spraoi/eslint-config": "^0.12.3",
-    "@spraoi/gatsby-config": "^0.12.6",
+    "@spraoi/gatsby-config": "^0.12.7",
     "@spraoi/jest-config": "^0.12.5",
     "@spraoi/prettier-config": "^0.12.3",
     "@spraoi/stylelint-config": "^0.12.3",
