@@ -1,6 +1,11 @@
 import React from 'react';
-import config from '../../config';
+import { Button } from '@spraoi/base';
+import Layout from '../../components/Layout';
 
-const IndexPage = () => <pre>{JSON.stringify(config, null, 2)}</pre>;
+const Index = props => (
+  <Layout {...props}>
+    <Button>Click Me!</Button>
+  </Layout>
+);
 
-export default IndexPage;
+export default Index;

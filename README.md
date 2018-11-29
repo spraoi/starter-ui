@@ -29,13 +29,26 @@ This contains the configuration used to generate `./src/config.json`. Inheritanc
 If any of those configuration files exist, they are
 [`deepmerged`](https://github.com/KyleAMathews/deepmerge).
 
+### `src/theme.js`
+
+Themes are used by components in this repo as well as any common-ui components that have styles associated with them.
+This gives us the ability to have shared components that respect the look and feel of our individual UI projects.
+
+To specify a theme for a particular variation, add a `theme` config attribute in that variation&rsquo;s `yml` config.
+
 ### `src/components/`
 
 TODO
 
 ### `src/containers/`
 
-TODO
+Container components should:
+
+- provide data to their children
+- provide data manipulation functions to their children
+- not do anything else
+
+This gives us the flexibility to have pages (routes) reuse existing container components.
 
 ### `src/routes/`
 
@@ -56,5 +69,13 @@ When we run `config=variation-one.dev yarn start`, Gatsby will create three page
 - `/new` from `src/routes/variation-one/new.js`
 
 ## Tooling
+
+TODO
+
+### styled-components
+
+TODO
+
+### final-form
 
 TODO

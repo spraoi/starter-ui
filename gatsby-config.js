@@ -1,7 +1,13 @@
-const defaults = require('@spraoi/gatsby-config');
+const { plugins } = require('@spraoi/gatsby-config');
 
 module.exports = {
-  ...defaults,
+  plugins: [
+    ...plugins,
+    {
+      options: { fonts: ['Open Sans:300,400,700'] },
+      resolve: 'gatsby-plugin-google-fonts',
+    },
+  ],
   siteMetadata: {
     title: 'Spraoi App',
   },
