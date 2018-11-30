@@ -1,22 +1,32 @@
 import React from 'react';
 import { Box, Button, Input } from '@spraoi/base';
+import { FORM_ERROR } from 'final-form';
 import { Field, Form } from 'react-final-form';
-import { compose, minLength, required } from '@spraoi/validations';
-import config from '../../config';
+import { compose, email, minLength, required } from '@spraoi/validations';
 import LoginContainer from '../../containers/LoginContainer';
+import config from '../../config';
 
 const Login = props => (
   <LoginContainer {...props}>
     {({ signIn }) => (
       <Form
-        onSubmit={signIn}
+        onSubmit={async values => {
+          try {
+            return await signIn(values);
+          } catch (e) {
+            return { [FORM_ERROR]: e.message };
+          }
+        }}
         render={formContext => (
           <form onSubmit={formContext.handleSubmit}>
             <Field
               component={Input}
               label="Email"
               name="username"
-              validate={required}
+              validate={compose(
+                required,
+                email
+              )}
             />
             <Field
               component={Input}
