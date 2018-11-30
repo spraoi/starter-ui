@@ -1,9 +1,0 @@
-amplify:
-  API:
-    endpoints:
-      - region: us-east-1
-  Auth:
-    region: us-east-1
-  Storage:
-    region: us-east-1
-theme: default

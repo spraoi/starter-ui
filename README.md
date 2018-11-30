@@ -29,7 +29,7 @@ This contains the configuration used to generate `./src/config.json`. Inheritanc
 If any of those configuration files exist, they are
 [`deepmerged`](https://github.com/KyleAMathews/deepmerge).
 
-### `src/theme.js`
+### `src/index.js`
 
 Themes are used by components in this repo as well as any common-ui components that have styles associated with them.
 This gives us the ability to have shared components that respect the look and feel of our individual UI projects.
@@ -59,12 +59,12 @@ The directories here behave similarly to the config files in [`config/`](#config
 
 Instead of merging config values, though, we "merge" the pages of our app. Here's an example:
 
-- `src/routes/default/` contains `index.js` and `override.js`
+- `src/routes/default/` contains `SignIn.js` and `override.js`
 - `src/routes/variation-one/` contains `override.js` and `new.js`
 
 When we run `config=variation-one.dev yarn start`, Gatsby will create three pages for us:
 
-- `/` from `src/routes/default/index.js`
+- `/` from `src/routes/default/SignIn.js`
 - `/override` from `src/routes/variation-one/override.js`
 - `/new` from `src/routes/variation-one/new.js`
 

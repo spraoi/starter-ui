@@ -1,0 +1,14 @@
+amplify:
+  API:
+    endpoints:
+      - endpoint: https://d9qkylsuhd.execute-api.us-east-1.amazonaws.com/v1
+        name: api
+        region: us-east-1
+  Auth:
+    identityPoolId: us-east-1:5ea0a351-d724-4851-8750-bbf0486778d1
+    region: us-east-1
+    userPoolId: us-east-1_xz9NliqZn
+    userPoolWebClientId: 2s6k2nof8livqutn8ta99ltsgp
+  Storage:
+    bucket: spr-code
+    region: us-east-1
