@@ -1,4 +1,4 @@
-# 3rd Part Libraries
+# 3rd Party Libraries
 
 TODO
 

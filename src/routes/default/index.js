@@ -1,17 +1,18 @@
 import React from 'react';
-import { Box, Button } from '@spraoi/base';
-import Layout from '../../components/Layout';
+import IndexContainer from '../../containers/IndexContainer';
 
 const Index = props => (
-  <Layout {...props} isPrivate>
-    {context => (
-      <Box>
-        <pre>{JSON.stringify(context, null, 2)}</pre>
+  <IndexContainer {...props}>
+    {authContext => (
+      <React.Fragment>
+        <h1>Dashboard</h1>
+        <h2>Auth Context</h2>
+        <pre>{JSON.stringify(authContext, null, 2)}</pre>
+        <h2>Route Props</h2>
         <pre>{JSON.stringify(props, null, 2)}</pre>
-        <Button>Click Me!</Button>
-      </Box>
+      </React.Fragment>
     )}
-  </Layout>
+  </IndexContainer>
 );
 
 export default Index;

@@ -7,18 +7,22 @@ Note that:
 
 ## [`configs/`](https://github.com/spraoi/starter-ui/tree/master/configs)
 
-Here you will find the configuration used to generate `./src/config.json`. Inheritance is as follows:
+Here you will find the configuration files used to generate `./src/config.json`. Inheritance is as follows:
 
 1. `default.yml` (lowest priority)
 2. `default.[stage].yml`
 3. `[variation].yml`
 4. `[variation].[stage].yml` (highest priority)
 
-If any of those configuration files exist, they are deeply merged.
+If any of those configuration files exist, they are deeply merged (based on priority).
+
+## [`docs/`](https://github.com/spraoi/starter-ui/tree/master/docs)
+
+Read them, respect them, love them, and try to keep them up-to-date.
 
 ## [`src/components/`](https://github.com/spraoi/starter-ui/tree/master/src/components)
 
-Components contain the highly reusable chunks of our app. A basic component is structured like so:
+Components contain the highly reusable chunks of UI. A basic component is structured like so:
 
 ```
 ComponentName
@@ -36,14 +40,14 @@ easy.
 
 ## [`src/containers/`](https://github.com/spraoi/starter-ui/tree/master/src/containers)
 
-Container components should:
+Container components should be structured like [components](#src-components). They should also:
 
 - be wrapped with the `<Layout />` component
 - provide data to their children
 - provide data manipulation functions to their children
 - not do anything else
 
-This gives us the flexibility to have pages (routes) in different variations reuse existing container components.
+This gives us the flexibility to have routes in different variations reuse existing API data related logic.
 
 ## [`src/images/`](https://github.com/spraoi/starter-ui/tree/master/src/images)
 
@@ -51,7 +55,7 @@ Images & icons used in the project should be placed here.
 
 ## [`src/routes/`](https://github.com/spraoi/starter-ui/tree/master/src/routes)
 
-The directories here behave similarly to the config files in [`config/`](#config). Inheritance is as follows:
+The directories here behave similarly to the config files in [`configs/`](#config). Inheritance is as follows:
 
 1. `default/` (lowest priority)
 2. `[variation]/` (highest priority)
