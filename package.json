@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@spraoi/auth": "^0.15.0",
-    "@spraoi/base": "^0.15.0",
+    "@spraoi/base": "^0.15.1",
     "@spraoi/gatsby-config": "^0.15.0",
     "@spraoi/helpers": "^0.15.0",
     "@spraoi/validations": "^0.15.0",

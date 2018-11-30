@@ -1,30 +1,15 @@
-import PropTypes from 'prop-types';
 import React from 'react';
-import get from 'lodash/get';
-import qs from 'query-string';
 import { Box, Button, Input } from '@spraoi/base';
-import { FORM_ERROR } from 'final-form';
 import { Field, Form } from 'react-final-form';
 import { compose, minLength, required } from '@spraoi/validations';
-import Layout from '../../components/Layout';
 import config from '../../config';
+import LoginContainer from '../../containers/LoginContainer';
 
-const Login = ({ location, ...rest }) => (
-  <Layout
-    {...rest}
-    isPublic
-    location={location}
-    redirect={get(qs.parse(location.search), 'redirect', '/')}
-  >
+const Login = props => (
+  <LoginContainer {...props}>
     {({ signIn }) => (
       <Form
-        onSubmit={async values => {
-          try {
-            return await signIn(values);
-          } catch (e) {
-            return { [FORM_ERROR]: e.message };
-          }
-        }}
+        onSubmit={signIn}
         render={formContext => (
           <form onSubmit={formContext.handleSubmit}>
             <Field
@@ -53,11 +38,7 @@ const Login = ({ location, ...rest }) => (
         )}
       />
     )}
-  </Layout>
+  </LoginContainer>
 );
-
-Login.propTypes = {
-  location: PropTypes.shape({ search: PropTypes.string.isRequired }).isRequired,
-};
 
 export default Login;

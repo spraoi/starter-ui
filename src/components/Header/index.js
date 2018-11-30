@@ -11,8 +11,6 @@ const StyledLogo = styled(Logo)`
   width: 6.2rem;
 `;
 
-const StyledNavItem = styled.li``;
-
 const Header = () => (
   <AuthContext.Consumer>
     {({ signOut, user: { familyName, givenName } }) => (
@@ -20,16 +18,18 @@ const Header = () => (
         <Link to="/">
           <StyledLogo alt="spraoi" />
         </Link>
-        <nav>
-          {givenName}&nbsp;{familyName}
+        <Box alignItems="center" as="nav" display="flex">
+          <Box pr="md">
+            {givenName}&nbsp;{familyName}
+          </Box>
           <Box as="ul" display="flex">
-            <StyledNavItem>
+            <li>
               <Button onClick={signOut} simple>
                 Log Out
               </Button>
-            </StyledNavItem>
+            </li>
           </Box>
-        </nav>
+        </Box>
       </Box>
     )}
   </AuthContext.Consumer>

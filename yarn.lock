@@ -962,10 +962,10 @@
   resolved "https://registry.yarnpkg.com/@spraoi/babel-preset/-/babel-preset-0.15.0.tgz#944d2aab9a478efeb9b506f8a16adc54cd98a2e8"
   integrity sha512-D+BXY+S6eA/csJCWboZBF8WkjiQYoL0lqB1C7C0D8xl+IEQjIrZc1/UMGjtpx14Rrqs/tdnvOzwH4S6wL+ueYA==
 
-"@spraoi/base@^0.15.0":
-  version "0.15.0"
-  resolved "https://registry.yarnpkg.com/@spraoi/base/-/base-0.15.0.tgz#f8c59d0d717ee8b5c46d11254b7817cbb3156a55"
-  integrity sha512-l+I2WiEeDHMSjQG+FxQiCarpDSXvFzj2MtmJiReF7/JpJjRNswhGCMVzKrIkirlndw7noYoISat/W7cZaUfgKA==
+"@spraoi/base@^0.15.1":
+  version "0.15.1"
+  resolved "https://registry.yarnpkg.com/@spraoi/base/-/base-0.15.1.tgz#a4a286f48f94d2a0f6fc91a5cf6a3b9e34e59ad0"
+  integrity sha512-EIfM/ZXu17ft2KalRrz1ohEoGkAIz3/376s69cCSlzOkvNoQ9XAppWOILUSyOR4rGoo9sVLR26qfeLBlnsVpSA==
 
 "@spraoi/eslint-config@^0.15.0":
   version "0.15.0"

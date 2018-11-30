@@ -58,12 +58,12 @@ The directories here behave similarly to the config files in [`config/`](#config
 
 Instead of merging config values, though, we "merge" the pages of our app. Here's an example:
 
-- `src/routes/default/` contains `SignIn.js` and `override.js`
+- `src/routes/default/` contains `index.js` and `override.js`
 - `src/routes/spraoi/` contains `override.js` and `new.js`
 
 When we run `config=spraoi.dev yarn start`, Gatsby will create three pages for us:
 
-- `/` from `src/routes/default/SignIn.js`
+- `/` from `src/routes/default/index.js`
 - `/override` from `src/routes/spraoi/override.js`
 - `/new` from `src/routes/spraoi/new.js`
 
