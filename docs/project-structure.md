@@ -1,6 +1,8 @@
 # Project Structure
 
-Note that:
+Having a consistent, battle-tested project structure has been known to increase developer happiness.
+
+## Notes
 
 - `[stage]` is usually one of `dev`, `qa`, `demo` or `prod`
 - `[variation]` is usually the name of the client the variation is for
@@ -40,7 +42,7 @@ easy.
 
 ## [`src/containers/`](https://github.com/spraoi/starter-ui/tree/master/src/containers)
 
-Container components should be structured like [components](#src-components). They should also:
+Container components should be structured like [components](#srccomponents). They should also:
 
 - be wrapped with the `<Layout />` component
 - provide data to their children
@@ -55,7 +57,7 @@ Images & icons used in the project should be placed here.
 
 ## [`src/routes/`](https://github.com/spraoi/starter-ui/tree/master/src/routes)
 
-The directories here behave similarly to the config files in [`configs/`](#config). Inheritance is as follows:
+The directories here behave similarly to the config files in [`configs/`](#configs). Inheritance is as follows:
 
 1. `default/` (lowest priority)
 2. `[variation]/` (highest priority)
