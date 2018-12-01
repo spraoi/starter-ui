@@ -1,25 +1,28 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { App, Box } from '@spraoi/base';
 import { BarLoader } from 'react-spinners';
-import { Box } from '@spraoi/base';
 import { Page } from '@spraoi/auth';
 import Header from '../Header';
+import config from '../../config';
 import theme from '../../theme';
 
 const Layout = ({ children, ...rest }) => (
-  <Page
-    {...rest}
-    renderLoading={
-      <Box display="flex" justifyContent="center" py="xxxl">
-        <BarLoader color={theme.colors.textPrimary} />
+  <App amplifyConfig={config.amplify} theme={theme}>
+    <Page
+      {...rest}
+      renderLoading={
+        <Box display="flex" justifyContent="center" py="xxxl">
+          <BarLoader color={theme.colors.textPrimary} />
+        </Box>
+      }
+    >
+      <Header />
+      <Box maxWidth="content" mx="auto" px="md" py="xl">
+        {children}
       </Box>
-    }
-  >
-    <Header />
-    <Box maxWidth="content" mx="auto" px="md" py="xl">
-      {children}
-    </Box>
-  </Page>
+    </Page>
+  </App>
 );
 
 Layout.propTypes = {

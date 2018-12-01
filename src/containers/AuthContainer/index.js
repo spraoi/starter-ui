@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import get from 'lodash/get';
 import qs from 'query-string';
-import { Context as AuthContext } from '@spraoi/auth';
+import { AuthContext } from '@spraoi/auth';
 import Layout from '../../components/Layout';
 
 const AuthContainer = ({ children, location, ...rest }) => (

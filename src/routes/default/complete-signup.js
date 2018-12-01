@@ -2,9 +2,9 @@ import React from 'react';
 import { Button, Input, Redirect } from '@spraoi/base';
 import { FORM_ERROR } from 'final-form';
 import { Field, Form } from 'react-final-form';
-import { compose, minLength, required } from '@spraoi/validations';
-import FormError from '../../components/FormError';
+import { composeValidations, minLength, required } from '@spraoi/validations';
 import AuthContainer from '../../containers/AuthContainer';
+import FormError from '../../components/FormError';
 import config from '../../config';
 
 const CompleteSignup = props => (
@@ -38,7 +38,7 @@ const CompleteSignup = props => (
               label="New Password"
               name="password"
               type="password"
-              validate={compose(
+              validate={composeValidations(
                 minLength(config.minPasswordLength),
                 required
               )}
