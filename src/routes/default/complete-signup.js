@@ -2,36 +2,40 @@ import React from 'react';
 import { Button, Input, Redirect } from '@spraoi/base';
 import { FORM_ERROR } from 'final-form';
 import { Field, Form } from 'react-final-form';
-import { compose, email, minLength, required } from '@spraoi/validations';
-import AuthContainer from '../../containers/AuthContainer';
+import { compose, minLength, required } from '@spraoi/validations';
 import FormError from '../../components/FormError';
+import AuthContainer from '../../containers/AuthContainer';
 import config from '../../config';
 
-const Login = props => (
+const CompleteSignup = props => (
   <AuthContainer {...props}>
-    {({ newPasswordRequired, signIn }) => (
+    {({ completeNewPasswordChallenge, newPasswordRequired }) => (
       <Form
         onSubmit={async values => {
           try {
-            return await signIn(values);
+            return await completeNewPasswordChallenge(values);
           } catch (e) {
             return { [FORM_ERROR]: e.message };
           }
         }}
         render={formContext => (
           <form onSubmit={formContext.handleSubmit}>
+            <Redirect to="/login" when={!newPasswordRequired} />
             <Field
               component={Input}
-              label="Email"
-              name="username"
-              validate={compose(
-                required,
-                email
-              )}
+              label="First Name"
+              name="given_name"
+              validate={required}
             />
             <Field
               component={Input}
-              label="Password"
+              label="Last Name"
+              name="family_name"
+              validate={required}
+            />
+            <Field
+              component={Input}
+              label="New Password"
               name="password"
               type="password"
               validate={compose(
@@ -41,9 +45,8 @@ const Login = props => (
             />
             <FormError error={formContext.submitError} />
             <Button submitting={formContext.submitting} type="submit">
-              Sign In
+              Complete Signup
             </Button>
-            <Redirect to="/complete-signup" when={newPasswordRequired} />
           </form>
         )}
       />
@@ -51,4 +54,4 @@ const Login = props => (
   </AuthContainer>
 );
 
-export default Login;
+export default CompleteSignup;

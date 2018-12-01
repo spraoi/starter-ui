@@ -153,7 +153,7 @@ export default {
     lg: '1.6em',
   },
   maxWidths: {
-    button: '12rem',
+    button: '14rem',
     content: '800px',
   },
   radii: {

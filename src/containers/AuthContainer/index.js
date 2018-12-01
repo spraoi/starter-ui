@@ -3,9 +3,9 @@ import React from 'react';
 import get from 'lodash/get';
 import qs from 'query-string';
 import { Context as AuthContext } from '@spraoi/auth';
-import Layout from '../../components/Layout/index';
+import Layout from '../../components/Layout';
 
-const LoginContainer = ({ children, location, ...rest }) => (
+const AuthContainer = ({ children, location, ...rest }) => (
   <Layout
     isPublic
     location={location}
@@ -16,9 +16,9 @@ const LoginContainer = ({ children, location, ...rest }) => (
   </Layout>
 );
 
-LoginContainer.propTypes = {
+AuthContainer.propTypes = {
   children: PropTypes.func.isRequired,
   location: PropTypes.shape({ search: PropTypes.string.isRequired }).isRequired,
 };
 
-export default LoginContainer;
+export default AuthContainer;
