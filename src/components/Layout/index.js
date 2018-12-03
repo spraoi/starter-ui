@@ -9,7 +9,7 @@ import theme from '../../theme';
 
 const Layout = ({ children, ...rest }) => (
   <App amplifyConfig={config.amplify} theme={theme}>
-    <Page {...rest} renderLoading={<PageSpinner />}>
+    <Page renderLoading={<PageSpinner />} {...rest}>
       <Header />
       <Box maxWidth="content" mx="auto" px="md" py="md">
         {children}
