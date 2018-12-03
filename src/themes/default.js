@@ -11,7 +11,7 @@ const spraoiBlue = '#46b2e2';
 const deepBlue = '#0a2239';
 
 const white = '#fefefe';
-const gray1 = '#e8e7e8';
+const gray1 = '#efeeef';
 const gray2 = '#d1d0d2';
 const gray3 = '#bbbbbc';
 const gray4 = '#a5a5a6';
@@ -48,6 +48,12 @@ const inputPrimaryBorder = border;
 const inputPrimaryBorderError = error;
 const inputPrimaryBorderFocus = primary;
 const inputPrimaryPlaceholderText = gray4;
+
+const inputSecondaryBg = gray1;
+const inputSecondaryBorder = border;
+const inputSecondaryBorderError = error;
+const inputSecondaryBorderFocus = primary;
+const inputSecondaryPlaceholderText = gray5;
 
 const buttonPrimaryBg = accent;
 const buttonPrimaryHover = accentLight;
@@ -111,6 +117,11 @@ export default {
     inputPrimaryBorderError,
     inputPrimaryBorderFocus,
     inputPrimaryPlaceholderText,
+    inputSecondaryBg,
+    inputSecondaryBorder,
+    inputSecondaryBorderError,
+    inputSecondaryBorderFocus,
+    inputSecondaryPlaceholderText,
     primary,
     primaryBg,
     primaryDark,
@@ -129,13 +140,13 @@ export default {
     mono: 'Menlo, monospace',
   },
   fontSizes: {
-    xxs: `${1 / fontSizeScale / fontSizeScale / fontSizeScale}`,
-    xs: `${1 / fontSizeScale / fontSizeScale}`,
-    sm: `${1 / fontSizeScale}`,
+    xxs: `${1 / fontSizeScale / fontSizeScale / fontSizeScale}rem`,
+    xs: `${1 / fontSizeScale / fontSizeScale}rem`,
+    sm: `${1 / fontSizeScale}rem`,
     md: '1rem',
-    lg: `${fontSizeScale}`,
-    xl: `${fontSizeScale * fontSizeScale}`,
-    xxl: `${fontSizeScale ** fontSizeScale}`,
+    lg: `${fontSizeScale}rem`,
+    xl: `${fontSizeScale * fontSizeScale}rem`,
+    xxl: `${fontSizeScale * fontSizeScale * fontSizeScale}rem`,
   },
   fontWeights: {
     light: 300,
@@ -155,6 +166,9 @@ export default {
   maxWidths: {
     button: '14rem',
     content: '800px',
+    sm: '500px',
+    md: '800px',
+    lg: '1200px',
   },
   radii: {
     sm: '2px',

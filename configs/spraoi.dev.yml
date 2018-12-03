@@ -10,5 +10,5 @@ amplify:
     userPoolId: us-east-1_xz9NliqZn
     userPoolWebClientId: 2s6k2nof8livqutn8ta99ltsgp
   Storage:
-    bucket: spr-code
+    bucket: spraoi-private-test
     region: us-east-1

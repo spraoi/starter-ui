@@ -1,16 +1,19 @@
 import React from 'react';
-import { Button, Input, Redirect } from '@spraoi/base';
+import { Input, Redirect } from '@spraoi/base';
 import { FORM_ERROR } from 'final-form';
-import { Field, Form } from 'react-final-form';
+import { Field, Form as FinalForm } from 'react-final-form';
 import { composeValidations, minLength, required } from '@spraoi/validations';
 import AuthContainer from '../../containers/AuthContainer';
+import Form from '../../components/Form';
 import FormError from '../../components/FormError';
+import FormHeading from '../../components/FormHeading';
+import SubmitButton from '../../components/SubmitButton';
 import config from '../../config';
 
 const CompleteSignup = props => (
   <AuthContainer {...props}>
     {({ completeNewPasswordChallenge, newPasswordRequired }) => (
-      <Form
+      <FinalForm
         onSubmit={async values => {
           try {
             return await completeNewPasswordChallenge(values);
@@ -19,8 +22,9 @@ const CompleteSignup = props => (
           }
         }}
         render={formContext => (
-          <form onSubmit={formContext.handleSubmit}>
+          <Form onSubmit={formContext.handleSubmit}>
             <Redirect to="/login" when={!newPasswordRequired} />
+            <FormHeading>Complete Signup</FormHeading>
             <Field
               component={Input}
               label="First Name"
@@ -43,11 +47,11 @@ const CompleteSignup = props => (
                 required
               )}
             />
-            <FormError error={formContext.submitError} />
-            <Button submitting={formContext.submitting} type="submit">
+            <FormError>{formContext.submitError}</FormError>
+            <SubmitButton submitting={formContext.submitting}>
               Complete Signup
-            </Button>
-          </form>
+            </SubmitButton>
+          </Form>
         )}
       />
     )}
