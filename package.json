@@ -14,19 +14,22 @@
   },
   "dependencies": {
     "@spraoi/auth": "^0.17.0",
-    "@spraoi/base": "^0.17.1",
+    "@spraoi/base": "^0.17.4",
     "@spraoi/file-upload": "^0.17.0",
     "@spraoi/gatsby-config": "^0.17.0",
     "@spraoi/helpers": "^0.17.0",
     "@spraoi/validations": "^0.17.0",
-    "aws-amplify": "^1.1.10",
+    "apollo-client": "^2.4.7",
+    "aws-amplify": "^1.1.12",
     "final-form": "^4.11.0",
-    "gatsby": "^2.0.60",
+    "gatsby": "^2.0.63",
+    "graphql-tag": "^2.10.0",
     "lodash": "^4.17.11",
     "polished": "^2.3.1",
     "prop-types": "^15.6.2",
     "query-string": "^6.2.0",
     "react": "^16.6.3",
+    "react-apollo": "^2.3.2",
     "react-dom": "^16.5.1",
     "react-final-form": "^4.0.2",
     "react-helmet": "^5.2.0",
@@ -34,12 +37,12 @@
     "styled-components": "^4.1.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.6",
-    "@babel/plugin-transform-runtime": "^7.1.0",
-    "@babel/runtime": "^7.1.5",
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/runtime": "^7.2.0",
     "@spraoi/babel-preset": "^0.17.0",
     "@spraoi/eslint-config": "^0.17.0",
-    "@spraoi/jest-config": "^0.17.0",
+    "@spraoi/jest-config": "^0.17.2",
     "@spraoi/prettier-config": "^0.17.0",
     "@spraoi/stylelint-config": "^0.17.0",
     "babel-core": "^7.0.0-bridge",
@@ -50,5 +53,9 @@
     "jest": "^23.6.0",
     "prettier": "^1.15.3",
     "stylelint": "^9.9.0"
+  },
+  "resolutions": {
+    "gatsby/**/graphql": "^0.13.2",
+    "@spraoi/base/aws-appsync/apollo-link-http/graphql": "^0.11.0"
   }
 }

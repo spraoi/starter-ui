@@ -1,9 +1,4 @@
 amplify:
-  API:
-    endpoints:
-      - endpoint: https://d9qkylsuhd.execute-api.us-east-1.amazonaws.com/v1
-        name: api
-        region: us-east-1
   Auth:
     identityPoolId: us-east-1:5ea0a351-d724-4851-8750-bbf0486778d1
     region: us-east-1
@@ -12,3 +7,8 @@ amplify:
   Storage:
     bucket: spraoi-private-test
     region: us-east-1
+apollo:
+  auth:
+    type: AWS_IAM
+  region: us-east-1
+  url: https://vycn4olkk5cutbghsedrp5xxaq.appsync-api.us-east-1.amazonaws.com/graphql

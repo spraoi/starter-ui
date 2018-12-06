@@ -8,7 +8,7 @@ import config from '../../config';
 import theme from '../../theme';
 
 const Layout = ({ children, ...rest }) => (
-  <App amplifyConfig={config.amplify} theme={theme}>
+  <App config={config} theme={theme}>
     <Page renderLoading={<PageSpinner />} {...rest}>
       <Header />
       <Box maxWidth="content" mx="auto" px="md" py="md">
