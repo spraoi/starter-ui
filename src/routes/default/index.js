@@ -1,16 +1,16 @@
-import React from 'react';
 import FileUpload from '@spraoi/file-upload';
-import Layout from '../../components/Layout/index';
+import React from 'react';
+import Route from '../../components/Route';
 
-const Index = props => (
-  <Layout isPrivate {...props}>
+const Index = () => (
+  <Route isPrivate>
     <h1>Data Upload</h1>
     <FileUpload
       allowMultiple
       labelIdle="Drag data files here or <span class=filepond--label-action>browse your device</span>"
       onCreateObjectName={name => `uploads/${name}`}
     />
-  </Layout>
+  </Route>
 );
 
 export default Index;

@@ -10,8 +10,8 @@ import FormHeading from '../../components/FormHeading';
 import SubmitButton from '../../components/SubmitButton';
 import config from '../../config';
 
-const CompleteSignup = props => (
-  <AuthContainer {...props}>
+const CompleteSignup = () => (
+  <AuthContainer>
     {({ completeNewPasswordChallenge, newPasswordRequired }) => (
       <FinalForm
         onSubmit={async values => {

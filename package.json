@@ -13,10 +13,11 @@
     "test": "jest"
   },
   "dependencies": {
-    "@spraoi/auth": "^0.17.0",
-    "@spraoi/base": "^0.17.4",
+    "@reach/router": "^1.2.1",
+    "@spraoi/auth": "^0.17.7",
+    "@spraoi/base": "^0.17.7",
     "@spraoi/file-upload": "^0.17.0",
-    "@spraoi/gatsby-config": "^0.17.0",
+    "@spraoi/gatsby-config": "^0.17.7",
     "@spraoi/helpers": "^0.17.0",
     "@spraoi/validations": "^0.17.0",
     "apollo-client": "^2.4.7",

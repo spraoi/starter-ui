@@ -946,7 +946,7 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
-"@reach/router@^1.1.1":
+"@reach/router@^1.1.1", "@reach/router@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@reach/router/-/router-1.2.1.tgz#34ae3541a5ac44fa7796e5506a5d7274a162be4e"
   integrity sha512-kTaX08X4g27tzIFQGRukaHmNbtMYDS3LEWIS8+l6OayGIw6Oyo1HIF/JzeuR2FoF9z6oV+x/wJSVSq4v8tcUGQ==
@@ -965,20 +965,20 @@
     babel-runtime "^6.26.0"
     redux-persist "^4.5.0"
 
-"@spraoi/auth@^0.17.0":
-  version "0.17.0"
-  resolved "https://registry.yarnpkg.com/@spraoi/auth/-/auth-0.17.0.tgz#2318d11ae498e1ffcda576a540ff67083d4edc6c"
-  integrity sha512-AtzI3/uKc9T7EvP05A6/g0SMV5Ndfcm8yymuTDioR6m75trrQ0YE40x2370Q9WljO4iAntMqe+LzMj3yazI95A==
+"@spraoi/auth@^0.17.7":
+  version "0.17.7"
+  resolved "https://registry.yarnpkg.com/@spraoi/auth/-/auth-0.17.7.tgz#70311b74765e8013456e65dd6e2c689ac951fd7d"
+  integrity sha512-FiA+gk34dNtuXHnOvagel/8o9xnNKSrogUP9YUJEU6OzzQA5+SunZqPTyfcXecVsi404Ft+lmZY4h1nKm5F9Gg==
 
 "@spraoi/babel-preset@^0.17.0":
   version "0.17.0"
   resolved "https://registry.yarnpkg.com/@spraoi/babel-preset/-/babel-preset-0.17.0.tgz#62f206c4a7827ec7c0c905d626354ff637e7b5fd"
   integrity sha512-QAwh2irbyoS22K7j6hQSwYbjduyn8i/LQmOGLu7gnqh6GiVY5JJQZwpFaayjkjg4tijLsoOWreT1BzcYDV/sbw==
 
-"@spraoi/base@^0.17.4":
-  version "0.17.5"
-  resolved "https://registry.yarnpkg.com/@spraoi/base/-/base-0.17.5.tgz#c619f99773557ac8d6f96d58467f2744ed623a72"
-  integrity sha512-h2yqo/1vB/Wb441lGYoJTshBNJsIzzXwPbovnSiBe3DfFLwBA8fgFCK0QImhMnXEsJw5+hAlpymwq1f8Zko9bg==
+"@spraoi/base@^0.17.7":
+  version "0.17.7"
+  resolved "https://registry.yarnpkg.com/@spraoi/base/-/base-0.17.7.tgz#1c634881bea34843778e2bfd2b291f20c1bd0d00"
+  integrity sha512-SK8VkgtZXLJrKsbMDsIOqRBPlMfQoNnzSXr/Fd+sNPELanHytT0Y6G1m9ROvEVNLfu82TZmu+UxoRHlg+vb/HQ==
   dependencies:
     aws-appsync "^1.5.2"
     aws-appsync-react "^1.2.3"
@@ -1007,13 +1007,14 @@
     filepond-plugin-file-validate-type "^1.2.0"
     react-filepond "^5.0.0"
 
-"@spraoi/gatsby-config@^0.17.0":
-  version "0.17.0"
-  resolved "https://registry.yarnpkg.com/@spraoi/gatsby-config/-/gatsby-config-0.17.0.tgz#94cc523d21abfda3bcb4048a8a016f7a89afd0e7"
-  integrity sha512-uRE2b98EzaEZxfXHvB/kCh0qx6C2w8XuTbm9pqZWZzmXIDiygEuJ2SXLY7wW62KN7yvzdYg7ASuK3fjPT8G3lg==
+"@spraoi/gatsby-config@^0.17.7":
+  version "0.17.7"
+  resolved "https://registry.yarnpkg.com/@spraoi/gatsby-config/-/gatsby-config-0.17.7.tgz#34ac1f189a33d87ac2c2dc522783fc699692b0c7"
+  integrity sha512-simIb6SzFlI3XNlQYNsY2O6wmQuunBEhALCNjh5Ktevlb/gAPfrOUuVr2f4Om7svFKdXVI9F5Xx9804NN84RqQ==
   dependencies:
     "@spraoi/gatsby-plugin" "^0.17.0"
     "@svgr/webpack" "^2.0.0"
+    gatsby-plugin-layout "^1.0.10"
     gatsby-plugin-page-creator "^2.0.4"
     gatsby-plugin-react-helmet "^3.0.0"
     gatsby-plugin-styled-components "^3.0.3"
@@ -5644,6 +5645,13 @@ gatsby-plugin-google-fonts@^0.0.4:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-0.0.4.tgz#dc1402a71f27c3ae6caee10777d10adadf74bd7c"
   integrity sha512-B9Q+dznk6UX2Fe7QyCTptiuLT+ZLtdFBs1lg5kvaVDyIlesEA2rSQqtB7IkEQflH91JPE4eAEM699JCPy7CFGg==
 
+gatsby-plugin-layout@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-1.0.10.tgz#0c4eacc71755b268581f74a6fdda574aa3a97def"
+  integrity sha512-FoUIf1zkknnE2AnMsJAPkjUXYYi9awdRKOdnWEgStWcqD93iDI5cIh/kJerI/Sh2JVu9A7NT0RCoC/aiYpcGIw==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+
 gatsby-plugin-page-creator@^2.0.4, gatsby-plugin-page-creator@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.0.5.tgz#16b268142aa3515b5856bf802d8eec5a6320dc1c"
@@ -8482,9 +8490,9 @@ minipass@^2.2.1, minipass@^2.3.4:
     yallist "^3.0.0"
 
 minizlib@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/minizlib/-/minizlib-1.1.1.tgz#6734acc045a46e61d596a43bb9d9cd326e19cc42"
-  integrity sha512-TrfjCjk4jLhcJyGMYymBH6oTXcWjYbUAXTHDbtnWHjZC25h0cdajHuPE1zxb4DVmu8crfh+HwH/WMuyLG0nHBg==
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/minizlib/-/minizlib-1.2.0.tgz#59517387478fd98d8017ed0299c6cb16cbd12da3"
+  integrity sha512-vQhkoouK/oKRVuFJynustmW3wrqZEXOrfbVVirvOVeglH4TNvIkcqiyojlIbbZYYDJZSbEKEXmDudg+tyRkm6g==
   dependencies:
     minipass "^2.2.1"
 

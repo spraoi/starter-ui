@@ -3,22 +3,21 @@ import React from 'react';
 import get from 'lodash/get';
 import qs from 'query-string';
 import { AuthContext } from '@spraoi/auth';
-import Layout from '../../components/Layout';
+import { Location } from '@reach/router';
+import Route from '../../components/Route';
 
-const AuthContainer = ({ children, location, ...rest }) => (
-  <Layout
-    isPublic
-    location={location}
-    redirect={get(qs.parse(location.search), 'redirect', '/')}
-    {...rest}
-  >
-    <AuthContext.Consumer>{children}</AuthContext.Consumer>
-  </Layout>
+const AuthContainer = ({ children }) => (
+  <Location>
+    {({ location: { search } }) => (
+      <Route isPublic redirect={get(qs.parse(search), 'redirect', '/')}>
+        <AuthContext.Consumer>{children}</AuthContext.Consumer>
+      </Route>
+    )}
+  </Location>
 );
 
 AuthContainer.propTypes = {
   children: PropTypes.func.isRequired,
-  location: PropTypes.shape({ search: PropTypes.string.isRequired }).isRequired,
 };
 
 export default AuthContainer;
