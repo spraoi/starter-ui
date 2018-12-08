@@ -4,7 +4,7 @@ amplify:
     userPoolId: us-east-1_2dyALnjqR
     userPoolWebClientId: 401tjhcrob2bq7p8meokqsdq7e
   Storage:
-    bucket: spr-import-placement-fidelity-qa
+    bucket: spr-fidelity
 apollo:
   url: https://cqej3bpw5bhttk3xgicqrccxmm.appsync-api.us-east-1.amazonaws.com/graphql
 deploy:

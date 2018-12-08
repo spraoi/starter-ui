@@ -8,7 +8,7 @@ const Index = () => (
     <h1>Data Upload</h1>
     <FileUpload
       allowMultiple
-      fileRenameFunction={file => `uploads/${uuid()}.${file.extension}`}
+      fileRenameFunction={file => `uploads/${uuid()}${file.extension}`}
       labelIdle="Drag data files here or <span class=filepond--label-action>browse your device</span>"
     />
   </Route>
