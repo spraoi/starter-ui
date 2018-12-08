@@ -1559,14 +1559,14 @@
     eslint-plugin-react "^7.11.1"
 
 "@spraoi/file-upload@^0.17.0":
-  version "0.17.8"
-  resolved "https://registry.yarnpkg.com/@spraoi/file-upload/-/file-upload-0.17.8.tgz#1613320ab4d18a92f8ab4b15e903c791af3f2740"
-  integrity sha512-8k3nLuL3OWpSSd6UP9uDdyPK7xbb5az0pfLZoTBVY1DCKuD3j8ZAaIGK/5ShH6JNjvHtsvp5rwFfXtp2rksFAw==
+  version "0.17.9"
+  resolved "https://registry.yarnpkg.com/@spraoi/file-upload/-/file-upload-0.17.9.tgz#6982f88f7a5cac33fca75b35e9f49a9c7793517d"
+  integrity sha512-oXMSaMOjGlAOeGXhEdP+1ENeh92QAbf9C+QqNlNAlG4CRVPNZBhifPVBvljburUWbIGDKCvr+GyUqf3AaeH7XQ==
   dependencies:
     aws-amplify "^1.1.13"
     eslint "^5.10.0"
     filepond "^3.3.2"
-    filepond-plugin-file-rename "^1.1.0"
+    filepond-plugin-file-rename "^1.1.1"
     filepond-plugin-file-validate-type "^1.2.0"
     gatsby "^2.0.64"
     lerna "^3.6.0"
@@ -6158,10 +6158,10 @@ filename-regex@^2.0.0:
   resolved "https://registry.yarnpkg.com/filename-regex/-/filename-regex-2.0.1.tgz#c1c4b9bee3e09725ddb106b75c1e301fe2f18b26"
   integrity sha1-wcS5vuPglyXdsQa3XB4wH+LxiyY=
 
-filepond-plugin-file-rename@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/filepond-plugin-file-rename/-/filepond-plugin-file-rename-1.1.0.tgz#7e485e81ccb18818433a2ae75c6fef72a32d1829"
-  integrity sha512-M1HrvOF3/qTIHyPxUNXCGWMk53jOHKtl+iH7yYZvCrDbXCK/QegnsYhbsOcoD9O1xGMxL9s/sNQUIzQs8nVk5Q==
+filepond-plugin-file-rename@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/filepond-plugin-file-rename/-/filepond-plugin-file-rename-1.1.1.tgz#c722238397275b1870634095141cfd7ed124b00d"
+  integrity sha512-mbe89ZjS1DM8C9YYirxwMNJ22j/tNsM2W4Kx9IFYYvBmyR0lb4vDHSFXmMz0HCcsWRCqBNKZdTAf98RNEHTVlw==
 
 filepond-plugin-file-validate-type@^1.2.0:
   version "1.2.0"
