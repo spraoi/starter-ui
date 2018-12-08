@@ -4,6 +4,7 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "rm -rf node_modules public .cache",
+    "deploy": "yarn build && spraoi deploy -c ./configs/$config.yml",
     "format": "prettier --write --ignore-path .gitignore \"**/*.{js,json,css,scss,md,yml}\"",
     "lint": "yarn lint:js && yarn lint:styles",
     "lint:js": "eslint --ignore-path .gitignore \"src/**/*.js\"",
@@ -46,6 +47,7 @@
     "@spraoi/eslint-config": "^0.17.0",
     "@spraoi/jest-config": "^0.17.2",
     "@spraoi/prettier-config": "^0.17.0",
+    "@spraoi/scripts": "^0.17.2",
     "@spraoi/stylelint-config": "^0.17.0",
     "babel-core": "^7.0.0-bridge",
     "babel-plugin-styled-components": "^1.9.2",
