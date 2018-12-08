@@ -1,0 +1,12 @@
+amplify:
+  Auth:
+    identityPoolId: us-east-1:c621e5c5-b4bf-4839-97ad-ec70036d8e11
+    userPoolId: us-east-1_AXDu1k57N
+    userPoolWebClientId: 2p1rn6567lradht3orq8ha9j57
+  Storage:
+    bucket: spr-import-placement-fidelity-prod
+apollo:
+  url: https://vxtcj3sr2bbrziwkxdw33ixmde.appsync-api.us-east-1.amazonaws.com/graphql
+deploy:
+  bucketUrl: s3://import-placement-fidelity.spraoi.ai
+  cloudFrontDistributionId: E14PS7DOC87TJ4

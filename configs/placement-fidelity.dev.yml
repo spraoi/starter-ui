@@ -4,6 +4,9 @@ amplify:
     userPoolId: us-east-1_KRzygmPtY
     userPoolWebClientId: 2s755vegbt7oq6ki2lhc5ao7bn
   Storage:
-    bucket: spraoi-private-test
+    bucket: spr-import-placement-fidelity-dev
 apollo:
   url: https://vycn4olkk5cutbghsedrp5xxaq.appsync-api.us-east-1.amazonaws.com/graphql
+deploy:
+  bucketUrl: s3://import-placement-fidelity.dev.spraoi.ai
+  cloudFrontDistributionId: EUQ9A4JCDUEZ5

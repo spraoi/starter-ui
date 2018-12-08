@@ -8,5 +8,7 @@ apollo:
   auth:
     type: AWS_IAM
   region: us-east-1
+deploy:
+  cacheControlMaxAge: 300
 minPasswordLength: 6
 theme: default
