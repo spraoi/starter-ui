@@ -47,7 +47,6 @@
     "@spraoi/eslint-config": "^0.17.0",
     "@spraoi/jest-config": "^0.17.2",
     "@spraoi/prettier-config": "^0.17.0",
-    "@spraoi/scripts": "^0.17.2",
     "@spraoi/stylelint-config": "^0.17.0",
     "babel-core": "^7.0.0-bridge",
     "babel-plugin-styled-components": "^1.9.2",
