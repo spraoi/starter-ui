@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { AuthContext } from '@spraoi/auth';
+import { AuthConsumer } from '@spraoi/auth';
 import { Box, Button } from '@spraoi/base';
 import { Link } from 'gatsby';
 import { ReactComponent as Logo } from '../../images/spraoi-logo.svg';
@@ -12,7 +12,7 @@ const StyledLogo = styled(Logo)`
 `;
 
 const Header = () => (
-  <AuthContext.Consumer>
+  <AuthConsumer>
     {({ isAuthenticated, signOut, user: { familyName, givenName } }) => (
       <Box
         as="header"
@@ -41,7 +41,7 @@ const Header = () => (
         )}
       </Box>
     )}
-  </AuthContext.Consumer>
+  </AuthConsumer>
 );
 
 export default Header;
