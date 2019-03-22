@@ -1134,10 +1134,10 @@
   resolved "https://registry.yarnpkg.com/@spraoi/babel-preset/-/babel-preset-0.19.15.tgz#659933c2ddb0d4e13c14cfea944260eae9a93090"
   integrity sha512-63TSxI4U1CfhgdyfblD8a0N8QAmXbcq/YEUeJWqlqFmLFlWs2WXbfhlazgKT8EAapn8QZMzw05rxElZZ955JIQ==
 
-"@spraoi/base@^0.19.12":
-  version "0.19.12"
-  resolved "https://registry.yarnpkg.com/@spraoi/base/-/base-0.19.12.tgz#4aaad43873d273799aecc0d7da72e54c57f3e7b5"
-  integrity sha512-QsalwvZcTvmh7GAdrh4kqLSRrWObZJldCckPPrx3Q4E68IiYL4m3vLFLcOhYETeRhwwJui0+SXb4pIO9tdNOUw==
+"@spraoi/base@^0.19.16":
+  version "0.19.16"
+  resolved "https://registry.yarnpkg.com/@spraoi/base/-/base-0.19.16.tgz#e04d9a9f1a85584606e22a5f4e49cd2e348b7ce2"
+  integrity sha512-/DKmqFk5s1LHi75HXYgrZrnfiGEBryE7lAlhLlMj5DcxMXYuAXdBrNZYyLP2sF1q4V1tHvfmVNe9dy70Ru3FNA==
   dependencies:
     aws-appsync "^1.5.2"
     aws-appsync-react "^1.2.3"

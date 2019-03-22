@@ -20,7 +20,7 @@
     "@reach/router": "^1.2.1",
     "@spraoi/auth": "^0.19.0",
     "@spraoi/babel-preset": "^0.19.15",
-    "@spraoi/base": "^0.19.12",
+    "@spraoi/base": "^0.19.16",
     "@spraoi/file-upload": "^0.19.9",
     "@spraoi/gatsby-config": "^0.19.13",
     "@spraoi/helpers": "^0.19.0",
