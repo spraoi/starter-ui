@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { AuthContext } from '@spraoi/auth';
 import { Box, Button } from '@spraoi/base';
 import { Link } from 'gatsby';
-import { ReactComponent as Logo } from '../../images/spraoi-logo.svg';
+import Logo from '../../images/spraoi-logo.svg';
 
 const StyledLogo = styled(Logo)`
   position: relative;
@@ -23,7 +23,7 @@ const Header = () => (
         p="md"
       >
         <Link to="/">
-          <StyledLogo alt="spraoi" />
+          <StyledLogo alt="Spraoi" />
         </Link>
         {isAuthenticated && (
           <Box alignItems="center" as="nav" display="flex">

@@ -19,7 +19,7 @@
     "@babel/runtime": "^7.4.2",
     "@reach/router": "^1.2.1",
     "@spraoi/auth": "^0.19.0",
-    "@spraoi/babel-preset": "^0.19.0",
+    "@spraoi/babel-preset": "^0.19.15",
     "@spraoi/base": "^0.19.12",
     "@spraoi/file-upload": "^0.19.9",
     "@spraoi/gatsby-config": "^0.19.13",
@@ -31,9 +31,11 @@
     "babel-plugin-styled-components": "^1.10.0",
     "babel-preset-gatsby": "^0.1.9",
     "buffer": "^4.9.1",
+    "core-js": "^2.6.5",
     "final-form": "^4.12.0",
     "gatsby": "^2.2.6",
     "gatsby-plugin-google-fonts": "^0.0.4",
+    "gatsby-plugin-react-svg": "^2.1.1",
     "graphql-tag": "^2.10.1",
     "lodash": "^4.17.11",
     "polished": "^3.0.4",
@@ -45,7 +47,7 @@
     "react-final-form": "^4.1.0",
     "react-helmet": "^5.2.0",
     "react-spinners": "^0.5.3",
-    "styled-components": "^4.1.3",
+    "styled-components": "^4.1.4-alpha.6",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
@@ -59,5 +61,13 @@
     "jest-resolve": "^24.5.0",
     "prettier": "^1.16.4",
     "stylelint": "^9.10.1"
+  },
+  "resolutions": {
+    "@spraoi/base/aws-appsync/apollo-link-http/graphql": "^0.11.0",
+    "gatsby/@gatsbyjs/relay-compiler/graphql": "^14.1.0",
+    "gatsby/babel-plugin-remove-graphql-queries/graphql": "^14.1.0",
+    "gatsby/eslint-plugin-graphql/graphql": "^0.13.0",
+    "gatsby/express-graphql/graphql": "^0.13.0",
+    "gatsby/graphql-tools/graphql": "^0.13.0"
   }
 }
