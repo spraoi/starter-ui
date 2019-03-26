@@ -12,5 +12,4 @@
 ## Documentation
 
 - [project structure](https://github.com/spraoi/starter-ui/blob/master/docs/project-structure.md)
-- [3rd party libraries](https://github.com/spraoi/starter-ui/blob/master/docs/3rd-party-libraries.md)
 - [shared components](https://github.com/spraoi/common-ui)

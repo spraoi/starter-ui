@@ -1,0 +1,7 @@
+amplify:
+  Auth:
+    identityPoolId: us-east-1:7444de88-0668-4199-93af-42c458ed81fd
+    userPoolId: us-east-1_p0NTw5zMn
+    userPoolWebClientId: 7gno9p681khrlit1nat44g57m
+apollo:
+  url: https://dnlytt6x2va5bbvock2kcrdmd4.appsync-api.us-east-1.amazonaws.com/graphql

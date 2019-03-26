@@ -2,8 +2,6 @@ amplify:
   Auth:
     mandatorySignIn: true
     region: us-east-1
-  Storage:
-    region: us-east-1
 apollo:
   auth:
     type: AWS_IAM
