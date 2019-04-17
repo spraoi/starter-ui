@@ -10,12 +10,23 @@ import FormError from '../../components/FormError';
 import FormHeading from '../../components/FormHeading';
 import SubmitButton from '../../components/SubmitButton';
 import config from '../../config';
-import { UPDATE_SELF } from '../../graphql/mutations';
 
 const CompleteSignup = () => (
   <AuthContainer>
     {({ completeNewPasswordChallenge, newPasswordRequired }) => (
-      <Mutation mutation={UPDATE_SELF}>
+      <Mutation
+        mutation={gql`
+          mutation($email: String!, $givenName: String!, $familyName: String!) {
+            updateSelf(
+              email: $email
+              givenName: $givenName
+              familyName: $familyName
+            ) {
+              id
+            }
+          }
+        `}
+      >
         {updateSelf => (
           <FinalForm
             onSubmit={async values => {

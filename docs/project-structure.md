@@ -49,7 +49,7 @@ Container components should be structured like [components](#srccomponents). The
 - provide data manipulation functions to their children
 - not do anything else
 
-This gives us the flexibility to have routes in different variations reuse existing API data related logic.
+This gives us the flexibility to have routes that require the same data to reuse existing API related logic.
 
 ## [`src/images/`](https://github.com/spraoi/starter-ui/tree/master/src/images)
 
