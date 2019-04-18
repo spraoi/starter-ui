@@ -15,7 +15,7 @@ import FormHeading from '../../components/FormHeading';
 import SubmitButton from '../../components/SubmitButton';
 import config from '../../config';
 
-const Login = () => (
+const LoginPage = () => (
   <AuthContainer>
     {({ newPasswordRequired, signIn }) => (
       <FinalForm
@@ -57,4 +57,4 @@ const Login = () => (
   </AuthContainer>
 );
 
-export default Login;
+export default LoginPage;

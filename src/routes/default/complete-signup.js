@@ -1,4 +1,5 @@
 import React from 'react';
+import gql from 'graphql-tag';
 import { FORM_ERROR } from 'final-form';
 import { Field, Form as FinalForm } from 'react-final-form';
 import { Input, Redirect } from '@spraoi/base';
@@ -11,7 +12,7 @@ import FormHeading from '../../components/FormHeading';
 import SubmitButton from '../../components/SubmitButton';
 import config from '../../config';
 
-const CompleteSignup = () => (
+const CompleteSignupPage = () => (
   <AuthContainer>
     {({ completeNewPasswordChallenge, newPasswordRequired }) => (
       <Mutation
@@ -76,4 +77,4 @@ const CompleteSignup = () => (
   </AuthContainer>
 );
 
-export default CompleteSignup;
+export default CompleteSignupPage;

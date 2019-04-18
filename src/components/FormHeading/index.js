@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Box } from '@spraoi/base';
 
-const FormHeading = ({ children }) => (
-  <Box as="h1" mb="lg" textAlign="center">
+const FormHeading = ({ children, ...rest }) => (
+  <Box as="h1" mb="lg" textAlign="center" {...rest}>
     {children}
   </Box>
 );
