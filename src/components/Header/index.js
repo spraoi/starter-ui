@@ -1,8 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
 import { AuthContext } from '@spraoi/auth';
 import { Box, Button } from '@spraoi/base';
 import { Link } from 'gatsby';
 import Logo from '../../images/spraoi-logo.svg';
+
+const StyledLogo = styled(Logo)`
+  position: relative;
+  bottom: -0.5rem;
+  width: 6.2rem;
+`;
 
 const Header = () => (
   <AuthContext.Consumer>
@@ -16,13 +23,7 @@ const Header = () => (
         p="md"
       >
         <Link to="/">
-          <Box
-            alt="Spraoi"
-            as={Logo}
-            bottom="-0.5rem"
-            position="relative"
-            width="6.2rem"
-          />
+          <StyledLogo alt="Spraoi" />
         </Link>
         {isAuthenticated && (
           <Box alignItems="center" as="nav" display="flex">
