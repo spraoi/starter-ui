@@ -13,4 +13,5 @@
 ## Documentation
 
 - [project structure](https://github.com/spraoi/starter-ui/blob/master/docs/project-structure.md)
+- [naming conventions](https://github.com/spraoi/starter-ui/blob/master/docs/naming-conventions.md)
 - [shared components](https://github.com/spraoi/common-ui)
