@@ -1,5 +1,4 @@
 import React from 'react';
-import gql from 'graphql-tag';
 import { FORM_ERROR } from 'final-form';
 import { Field, Form as FinalForm } from 'react-final-form';
 import { Input, Redirect } from '@spraoi/base';
@@ -11,23 +10,12 @@ import FormError from '../../components/FormError';
 import FormHeading from '../../components/FormHeading';
 import SubmitButton from '../../components/SubmitButton';
 import config from '../../config';
+import { UPDATE_SELF_MUTATION } from '../../graphql/mutations';
 
 const CompleteSignupPage = () => (
   <AuthContainer>
     {({ completeNewPasswordChallenge, newPasswordRequired }) => (
-      <Mutation
-        mutation={gql`
-          mutation($email: String!, $givenName: String!, $familyName: String!) {
-            updateSelf(
-              email: $email
-              givenName: $givenName
-              familyName: $familyName
-            ) {
-              id
-            }
-          }
-        `}
-      >
+      <Mutation mutation={UPDATE_SELF_MUTATION}>
         {updateSelf => (
           <FinalForm
             onSubmit={async values => {
