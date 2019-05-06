@@ -1,18 +1,11 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Box, Button } from '@spraoi/base';
+import { Button } from '@spraoi/base';
 
 const SubmitButton = ({ children, submitting, ...rest }) => (
-  <Box
-    as={Button}
-    mt="xl"
-    mx="auto"
-    submitting={submitting}
-    type="submit"
-    {...rest}
-  >
+  <Button mt="xl" mx="auto" submitting={submitting} type="submit" {...rest}>
     {children}
-  </Box>
+  </Button>
 );
 
 SubmitButton.propTypes = {
