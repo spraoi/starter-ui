@@ -21,7 +21,7 @@ const LoginPage = () => (
       <FinalForm
         onSubmit={async values => {
           try {
-            return await signIn(values);
+            return signIn(values);
           } catch (e) {
             return { [FORM_ERROR]: e.message };
           }
