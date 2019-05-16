@@ -189,6 +189,6 @@ export default {
   transitionSpeeds: {
     fast: '.1s',
     normal: '.2s',
-    slow: '.4',
+    slow: '.4s',
   },
 };
