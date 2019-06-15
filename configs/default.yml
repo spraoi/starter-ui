@@ -5,6 +5,7 @@ amplify:
 apollo:
   auth:
     type: AWS_IAM
+  disableOffline: true
   region: us-east-1
 deploy:
   cacheControlMaxAge: 300
