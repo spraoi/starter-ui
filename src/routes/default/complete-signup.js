@@ -16,7 +16,7 @@ const CompleteSignupPage = () => (
       <FinalForm
         onSubmit={async values => {
           try {
-            return completeNewPasswordChallenge(values);
+            await completeNewPasswordChallenge(values);
           } catch (e) {
             return { [FORM_ERROR]: e.message };
           }
