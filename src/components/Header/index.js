@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { AuthContext } from '@spraoi/auth';
 import { Box, Button } from '@spraoi/base';
 import { Link } from 'gatsby';
-import Logo from '../../images/spraoi-logo.svg';
+import Logo from '../../images/icons/spraoi-logo.svg';
 
 const StyledLogo = styled(Logo)`
   position: relative;
