@@ -4,13 +4,15 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "rm -rf node_modules public .cache",
-    "deploy": "yarn build && spraoi deploy -c ./configs/$config.yml",
-    "format": "prettier --write --ignore-path .gitignore \"**/*.{js,json,css,scss,md,yml}\"",
+    "deploy": "yarn build && spraoi deploy -c $config",
+    "format": "yarn prettier && yarn svgo",
     "lint": "yarn lint:js && yarn lint:styles",
     "lint:js": "eslint --ignore-path .gitignore \"src/**/*.js\"",
     "lint:styles": "stylelint --ignore-path .gitignore \"src/**/*.js\"",
+    "prettier": "prettier --write --ignore-path .gitignore \"**/*.{js,json,css,scss,md,yml}\"",
     "serve": "gatsby serve",
     "start": "gatsby develop",
+    "svgo": "svgo --config node_modules/@spraoi/svgo-config/svgo.yml -f src/images/icons",
     "test": "jest"
   },
   "dependencies": {
@@ -20,7 +22,7 @@
     "@reach/router": "^1.2.1",
     "@spraoi/auth": "^0.20.18",
     "@spraoi/babel-preset": "^0.20.18",
-    "@spraoi/base": "^0.20.18",
+    "@spraoi/base": "^0.20.20",
     "@spraoi/gatsby-config": "^0.20.19",
     "@spraoi/helpers": "^0.20.18",
     "@spraoi/validations": "^0.20.18",

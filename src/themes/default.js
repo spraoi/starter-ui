@@ -80,7 +80,9 @@ export default {
     xl: '18px',
   },
   boxShadows: {
+    sm: '0 0px 6px 0 rgba(0, 0, 0, 0.2)',
     md: '0 3px 18px 0 rgba(0, 0, 0, 0.1)',
+    lg: '0 6px 54px 0 rgba(0, 0, 0, 0.1)',
   },
   breakpoints: {
     xs: '300px',

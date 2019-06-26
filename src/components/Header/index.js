@@ -1,44 +1,46 @@
 import React from 'react';
-import styled from 'styled-components';
 import { AuthContext } from '@spraoi/auth';
-import { Box, Button } from '@spraoi/base';
+import { Box, Menu } from '@spraoi/base';
 import { Link } from 'gatsby';
-import Logo from '../../images/icons/spraoi-logo.svg';
+import Icon from '../Icon';
 
-const StyledLogo = styled(Logo)`
-  position: relative;
-  bottom: -0.5rem;
-  width: 6.2rem;
-`;
+const renderMenuItemWithIcon = ([svg, Item], i) => (
+  <Box key={i} alignItems="center" display="flex">
+    <Icon height="1rem" mr="md" svg={svg} width="1rem" /> <span>{Item}</span>
+  </Box>
+);
 
 const Header = () => (
   <AuthContext.Consumer>
     {({ isAuthenticated, signOut, user: { familyName, givenName } }) => (
-      <Box
-        as="header"
-        display="flex"
-        justifyContent={isAuthenticated ? 'space-between' : 'center'}
-        maxWidth="content"
-        mx="auto"
-        p="md"
-      >
-        <Link to="/">
-          <StyledLogo alt="Spraoi" />
-        </Link>
-        {isAuthenticated && (
-          <Box alignItems="center" as="nav" display="flex">
-            <Box pr="md">
-              {givenName}&nbsp;{familyName}
-            </Box>
-            <Box as="ul" display="flex">
-              <li>
-                <Button onClick={signOut} simple>
-                  Sign Out
-                </Button>
-              </li>
-            </Box>
-          </Box>
-        )}
+      <Box as="header" width="100%">
+        <Box
+          alignItems="center"
+          display="flex"
+          justifyContent={isAuthenticated ? 'space-between' : 'center'}
+          maxWidth="content"
+          mx="auto"
+          p="md"
+          width="100%"
+        >
+          <Link to="/">
+            <Icon
+              alt="Spraoi"
+              bottom="-0.25rem"
+              position="relative"
+              svg="spraoi-logo"
+              width="6.2rem"
+            />
+          </Link>
+          {isAuthenticated && (
+            <Menu
+              button={<Icon height="1.2rem" svg="user" width="1.2rem" />}
+              heading={`Signed in as ${givenName} ${familyName}`}
+              itemActions={[signOut]}
+              items={[['logout', 'Sign Out']].map(renderMenuItemWithIcon)}
+            />
+          )}
+        </Box>
       </Box>
     )}
   </AuthContext.Consumer>

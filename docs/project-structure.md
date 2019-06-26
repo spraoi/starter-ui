@@ -69,6 +69,15 @@ schema in AWS AppSync.
 
 Images & icons used in the project should be placed here.
 
+## [`src/images/icons/`](https://github.com/spraoi/starter-ui/tree/master/src/images/icons)
+
+This folder has two special features:
+
+1. This is the folder that `yarn svgo` targets—enabling easy svg optimizations.
+2. On `yarn start`, `@spraoi/gatsby-plugin` automatically generates the
+   `src/components/Icon/index.js` component based on the icons in this
+   directory.
+
 ## [`src/routes/`](https://github.com/spraoi/starter-ui/tree/master/src/routes)
 
 The directories here behave similarly to the config files in

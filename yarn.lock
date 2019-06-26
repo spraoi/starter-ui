@@ -1181,10 +1181,10 @@
   resolved "https://registry.yarnpkg.com/@spraoi/babel-preset/-/babel-preset-0.20.18.tgz#4411858890cde99145e2522437efbdd8838fbfb2"
   integrity sha512-8GKNJk+qswhjxXRdOjWN593uv5VaRuS+1j7kkS8fVXPQ/hlXRBX7GEz+237VHuuoZ4ywzY1IDVn/1AGO/p/QhQ==
 
-"@spraoi/base@^0.20.18":
-  version "0.20.18"
-  resolved "https://registry.yarnpkg.com/@spraoi/base/-/base-0.20.18.tgz#1ca203fdc251e867b7bba2304894c18facf244cb"
-  integrity sha512-wkh8hm/kC37/D3KjeFCIB9jpGdAT20cge4hliix5nudvk3HBbIC81/9GOTtLWOIEsSGHJcWpGV1utCdZMbz2fQ==
+"@spraoi/base@^0.20.20":
+  version "0.20.20"
+  resolved "https://registry.yarnpkg.com/@spraoi/base/-/base-0.20.20.tgz#8ca7142a65e25b0d83ce040528fdaf38ad135525"
+  integrity sha512-VSEPVeR0rGP7ObToG8xLZ2l5F9Kna0gIENf07nDGBWVD0yLuVP6fWN3cHSsSYfNkKUFcVOBU3EHgJSSRhxAqMw==
   dependencies:
     "@spraoi/file-upload" "^0.20.18"
     apollo-cache-inmemory "^1.6.2"
