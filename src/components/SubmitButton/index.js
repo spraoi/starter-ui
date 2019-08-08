@@ -3,7 +3,14 @@ import React from 'react';
 import { Button } from '@spraoi/base';
 
 const SubmitButton = ({ children, submitting, ...rest }) => (
-  <Button mt="xl" mx="auto" submitting={submitting} type="submit" {...rest}>
+  <Button
+    mt="xl"
+    mx="auto"
+    submitting={submitting}
+    type="submit"
+    width="12rem"
+    {...rest}
+  >
     {children}
   </Button>
 );
