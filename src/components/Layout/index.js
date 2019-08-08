@@ -1,7 +1,7 @@
 import Auth from '@aws-amplify/auth';
+import PropTypes from 'prop-types';
 import React from 'react';
 import { App, Box } from '@spraoi/base';
-import { func, node, oneOfType } from 'prop-types';
 import Header from '../Header';
 import config from '../../config';
 import theme from '../../theme';
@@ -16,7 +16,7 @@ const Layout = ({ children }) => (
 );
 
 Layout.propTypes = {
-  children: oneOfType([func, node]).isRequired,
+  children: PropTypes.oneOfType([PropTypes.func, PropTypes.node]).isRequired,
 };
 
 export default Layout;
