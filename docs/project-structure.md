@@ -62,7 +62,7 @@ existing API related logic.
 ## [`src/graphql/`](https://github.com/spraoi/starter-ui/tree/master/src/graphql)
 
 GraphQL queries, subscriptions and mutations should be added and maintained
-here. Eventually, these will be automatically generated based on the GraphQL
+here. Eventually, these could be automatically generated based on the GraphQL
 schema in AWS AppSync.
 
 ## [`src/images/`](https://github.com/spraoi/starter-ui/tree/master/src/images)

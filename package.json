@@ -13,7 +13,7 @@
     "serve": "gatsby serve",
     "start": "gatsby develop",
     "svgo": "svgo --config node_modules/@spraoi/svgo-config/svgo.yml -f src/images/icons",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "dependencies": {
     "@apollo/react-hooks": "^3.0.0",
@@ -57,12 +57,14 @@
     "@spraoi/jest-config": "^0.21.0",
     "@spraoi/prettier-config": "^0.21.0",
     "@spraoi/stylelint-config": "^0.21.0",
+    "@spraoi/svgo-config": "^0.21.0",
     "eslint": "^5.16.0",
     "jest": "^24.8.0",
     "jest-haste-map": "^24.8.1",
     "jest-resolve": "^24.8.0",
     "prettier": "^1.18.2",
-    "stylelint": "^10.1.0"
+    "stylelint": "^10.1.0",
+    "svgo": "^1.3.0"
   },
   "resolutions": {
     "@spraoi/base/aws-appsync/apollo-link-http/graphql": "^0.11.0"
