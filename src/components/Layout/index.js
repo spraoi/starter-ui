@@ -1,7 +1,7 @@
-import Auth from '@aws-amplify/auth';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { App, Box } from '@spraoi/base';
+import { Auth } from 'aws-amplify';
 import Header from '../Header';
 import config from '../../config';
 import theme from '../../theme';
