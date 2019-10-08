@@ -1,11 +1,13 @@
 import React from 'react';
 import { BarLoader } from 'react-spinners';
 import { Box } from '@spraoi/base';
-import theme from '../../theme';
+import { ThemeConsumer } from 'styled-components';
 
 const PageSpinner = () => (
-  <Box display="flex" justifyContent="center" py="md">
-    <BarLoader color={theme.colors.textPrimary} />
+  <Box display="flex" justifyContent="center" py={5}>
+    <ThemeConsumer>
+      {theme => <BarLoader color={theme.colors.text.primary} />}
+    </ThemeConsumer>
   </Box>
 );
 

@@ -3,7 +3,7 @@ import React from 'react';
 import { Box } from '@spraoi/base';
 
 const FormHeading = ({ children, ...rest }) => (
-  <Box as="h1" mb="lg" textAlign="center" {...rest}>
+  <Box as="h1" mb={6} textAlign="center" {...rest}>
     {children}
   </Box>
 );

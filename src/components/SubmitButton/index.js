@@ -4,7 +4,7 @@ import { Button } from '@spraoi/base';
 
 const SubmitButton = ({ children, submitting, ...rest }) => (
   <Button
-    mt="xl"
+    mt={7}
     mx="auto"
     submitting={submitting}
     type="submit"

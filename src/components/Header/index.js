@@ -1,12 +1,12 @@
 import React from 'react';
 import { AuthContext } from '@spraoi/auth';
-import { Box, Menu } from '@spraoi/base';
+import { Box, DropdownMenu } from '@spraoi/base';
 import { Link } from 'gatsby';
 import Icon from '../Icon';
 
 const renderMenuItemWithIcon = ([svg, Item], i) => (
   <Box key={i} alignItems="center" display="flex">
-    <Icon height="1rem" mr="md" svg={svg} width="1rem" /> <span>{Item}</span>
+    <Icon height="1rem" mr={5} svg={svg} width="1rem" /> <span>{Item}</span>
   </Box>
 );
 
@@ -18,9 +18,9 @@ const Header = () => (
           alignItems="center"
           display="flex"
           justifyContent={isAuthenticated ? 'space-between' : 'center'}
-          maxWidth="content"
+          maxWidth="maxWidths.content"
           mx="auto"
-          p="md"
+          p={5}
           width="100%"
         >
           <Link to="/">
@@ -33,7 +33,7 @@ const Header = () => (
             />
           </Link>
           {isAuthenticated && (
-            <Menu
+            <DropdownMenu
               button={<Icon height="1.2rem" svg="user" width="1.2rem" />}
               heading={`Signed in as ${givenName} ${familyName}`}
               itemActions={[signOut]}

@@ -9,7 +9,7 @@ import theme from '../../theme';
 const Layout = ({ children }) => (
   <App config={config} credentials={Auth.currentCredentials} theme={theme}>
     <Header />
-    <Box maxWidth="content" mx="auto" px="md" py="md">
+    <Box maxWidth="maxWidths.content" mx="auto" px={5} py={5}>
       {children}
     </Box>
   </App>
