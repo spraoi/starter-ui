@@ -6,7 +6,7 @@ const IndexPage = () => (
   <Route isPrivate>
     <h1>Starter UI</h1>
     <Box as="p" fontSize={4} mt={5}>
-      Happy hacking 😊
+      Happy hacking (:
     </Box>
   </Route>
 );
