@@ -1,6 +1,6 @@
+import Box from '@spraoi/base/Box';
 import React from 'react';
 import { BarLoader } from 'react-spinners';
-import { Box } from '@spraoi/base';
 import { ThemeConsumer } from 'styled-components';
 
 const PageSpinner = () => (

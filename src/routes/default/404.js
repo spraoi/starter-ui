@@ -1,5 +1,5 @@
+import Box from '@spraoi/base/Box';
 import React from 'react';
-import { Box } from '@spraoi/base';
 
 const NotFoundPage = () => (
   <Box as="h1" fontSize={5} my={8}>

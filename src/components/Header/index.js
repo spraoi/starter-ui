@@ -1,6 +1,7 @@
+import Box from '@spraoi/base/Box';
+import DropdownMenu from '@spraoi/base/DropdownMenu';
 import React from 'react';
 import { AuthContext } from '@spraoi/auth';
-import { Box, DropdownMenu } from '@spraoi/base';
 import { Link } from 'gatsby';
 import Icon from '../Icon';
 

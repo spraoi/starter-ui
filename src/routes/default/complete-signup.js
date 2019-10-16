@@ -1,7 +1,8 @@
+import Input from '@spraoi/base/Input';
 import React from 'react';
+import Redirect from '@spraoi/base/Redirect';
 import { FORM_ERROR } from 'final-form';
 import { Field, Form as FinalForm } from 'react-final-form';
-import { Input, Redirect } from '@spraoi/base';
 import { composeValidations, minLength, required } from '@spraoi/validations';
 import AuthContainer from '../../containers/AuthContainer';
 import Form from '../../components/Form';

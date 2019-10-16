@@ -1,6 +1,6 @@
+import Button from '@spraoi/base/Button';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Button } from '@spraoi/base';
 
 const SubmitButton = ({ children, submitting, ...rest }) => (
   <Button

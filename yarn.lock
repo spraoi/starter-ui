@@ -1338,22 +1338,22 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
-"@spraoi/auth@^0.23.0":
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/@spraoi/auth/-/auth-0.23.0.tgz#742a82378de105d70e2297125f8431669ff1da47"
-  integrity sha512-gZmpGt7MlRBxIRFUoCVRCKa0LZeh1mjMJQbFcJvOg2jvabKgW3wDWwzyPEI7aSNNcxMH1CmxOB1FWm6VnpXh2Q==
+"@spraoi/auth@^0.23.18":
+  version "0.23.18"
+  resolved "https://registry.yarnpkg.com/@spraoi/auth/-/auth-0.23.18.tgz#211a30ce6d07bc0a8fdcb4b18c5cd3a36562380b"
+  integrity sha512-uuFAVfRzm7p2vmj1gXN3Naam/caXT9YAQ7tFtywSyVjlM3NR/EDppnEdqCguB64xKUoTMNsODK7kkbdrAs/UZg==
 
 "@spraoi/babel-preset@^0.23.0":
   version "0.23.0"
   resolved "https://registry.yarnpkg.com/@spraoi/babel-preset/-/babel-preset-0.23.0.tgz#88dac3c6383754463b02889a07b772fb56196a07"
   integrity sha512-9VY9OGEw0xxKmHBnNdhTbzxNQPxFGRgP0IO1M3FZbPbKInmTujyF2YXU2JZT9N+Kyg6eMOzm1pNQl0RBCbVSxA==
 
-"@spraoi/base@^0.23.17":
-  version "0.23.17"
-  resolved "https://registry.yarnpkg.com/@spraoi/base/-/base-0.23.17.tgz#1619cd9001c3c7861815980fbf173d5bc678733b"
-  integrity sha512-Ogar4oKJbU9nWHsuV62AEmyvEcEIut57NAnDv6Etfct9ZTawfGFbBVnrglvXsF/RKGkbPIibmgm+ROaILW5nLA==
+"@spraoi/base@^0.23.18":
+  version "0.23.18"
+  resolved "https://registry.yarnpkg.com/@spraoi/base/-/base-0.23.18.tgz#e4566b97698d91bc8c73464512a36d120ee29ed8"
+  integrity sha512-0neq0SRQnm76tXAV/6BF3WCxVotPC9KiX/TaWKPyZvrmX/6eu23s17jr3dpQJFoglM9GAfxo1F3ZlkrtWfu+1Q==
   dependencies:
-    "@spraoi/file-upload" "^0.23.0"
+    "@spraoi/file-upload" "^0.23.18"
     "@wojtekmaj/react-daterange-picker" "^2.4.0"
     apollo-cache-inmemory "^1.6.3"
     apollo-link-context "^1.0.19"
@@ -1386,40 +1386,40 @@
     eslint-plugin-react "^7.14.3"
     eslint-plugin-react-hooks "^1.7.0"
 
-"@spraoi/file-upload@^0.23.0":
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/@spraoi/file-upload/-/file-upload-0.23.0.tgz#86a473e56d6e0ca356e4f7943f2ad67cda39bc1a"
-  integrity sha512-4agr0i9zZq6/J/EwMdhZ2u7mU8aMm3ooCnZ2ELatd5JH4JvX9HCRkWdvlGLPABMcT9WbMslRZPgdf/UxUXxKHg==
+"@spraoi/file-upload@^0.23.18":
+  version "0.23.18"
+  resolved "https://registry.yarnpkg.com/@spraoi/file-upload/-/file-upload-0.23.18.tgz#92d64d9b9e57b533743c8c8d6357f1993e86857e"
+  integrity sha512-vYzF0bElDo1HDnbAOyXnOT5UEuJP+0RSKEQ1dkyc6J/7sbBUUDkvP48Gbb8nyK4YKsWLZ6gqstEO4dbXK6NJRQ==
   dependencies:
     filepond "^4.7.0"
     filepond-plugin-file-rename "^1.1.4"
     filepond-plugin-file-validate-type "^1.2.4"
     react-filepond "^7.0.1"
 
-"@spraoi/gatsby-config@^0.23.17":
-  version "0.23.17"
-  resolved "https://registry.yarnpkg.com/@spraoi/gatsby-config/-/gatsby-config-0.23.17.tgz#4df6e999b54d3b23268424af453ad2916872d9db"
-  integrity sha512-swvQkEAkkJtzjgjIETBHn7J3lP6RSO6A7EWrHmZnMg0iEheSjmYRHDqc+chQ3b1WhLoACKCkCGwrkRjaE5gE/A==
+"@spraoi/gatsby-config@^0.23.18":
+  version "0.23.18"
+  resolved "https://registry.yarnpkg.com/@spraoi/gatsby-config/-/gatsby-config-0.23.18.tgz#0053113a313187f61a47d353b43b95610c30380c"
+  integrity sha512-T42vULZS+RPtO1E6/s23zl4kr9li84YrQXAtkvZYBOgFzxE+ATlXRcysLBAKQl9/colEDewvJKmVIjiMFsWRVw==
   dependencies:
-    "@spraoi/gatsby-plugin" "^0.23.0"
+    "@spraoi/gatsby-plugin" "^0.23.18"
     gatsby-plugin-compile-es6-packages "^2.1.0"
     gatsby-plugin-layout "^1.1.7"
     gatsby-plugin-page-creator "^2.1.17"
     gatsby-plugin-react-svg "^2.1.2"
     gatsby-plugin-styled-components "^3.1.5"
 
-"@spraoi/gatsby-plugin@^0.23.0":
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/@spraoi/gatsby-plugin/-/gatsby-plugin-0.23.0.tgz#ff3ce50d0bfdbd9b9ce70e9b7ad348094426ffd7"
-  integrity sha512-DeUPanDKmCIYnIHb3xjvoQOsAfjJEtV5U7PmtwU7GZkLLvNqWqLQtEitV2sOzx0MRZvXSUHnn5ULCRljenZj5Q==
+"@spraoi/gatsby-plugin@^0.23.18":
+  version "0.23.18"
+  resolved "https://registry.yarnpkg.com/@spraoi/gatsby-plugin/-/gatsby-plugin-0.23.18.tgz#a578e2e30e1324d63366c9c290ae3d74705d612f"
+  integrity sha512-cbmBlimo8ITJ2gm+pJ/wva/toBO0tEGSgEsTM1GnI/S0/NEZq2pI9bjIUIYTPnLolOde0P4jqq7FN8Dy3+q4fA==
   dependencies:
     deepmerge "^4.0.0"
     js-yaml "^3.13.1"
 
-"@spraoi/helpers@^0.23.5":
-  version "0.23.5"
-  resolved "https://registry.yarnpkg.com/@spraoi/helpers/-/helpers-0.23.5.tgz#8077a9d186b9c756343ae2be9e8e15c02825867f"
-  integrity sha512-XhFXRc544W+uGg/w89ZBdACJ49TADszLWSJweyjYXwlLi3XdUIxjOOFbNaOk3Edg60tyGqRAzTOfy0I2B9BScg==
+"@spraoi/helpers@^0.23.18":
+  version "0.23.18"
+  resolved "https://registry.yarnpkg.com/@spraoi/helpers/-/helpers-0.23.18.tgz#6752191ecc09a3b9787e569c6616d5bb365f28a4"
+  integrity sha512-FCiQ5CGlIcG97jxMEyVb7Vm7smF8DJ/AHzmaVXiqmeA1NehT37Nnj5Q4zSz0uYPwrZioJ/FbmpqdxbCLSYpgzw==
 
 "@spraoi/jest-config@^0.23.0":
   version "0.23.0"
@@ -1434,10 +1434,10 @@
   resolved "https://registry.yarnpkg.com/@spraoi/prettier-config/-/prettier-config-0.23.0.tgz#f326854b924a1c4907521a9bf89696296e5c9a46"
   integrity sha512-HTIsJeB2ehTfrdbwVuhVm3EEOPELmXkfG5RJ50udS2jXE9QrzFF6n90dz2vY3PDdL06vkkFrCaAINMzX4S2ENQ==
 
-"@spraoi/stylelint-config@^0.23.17":
-  version "0.23.17"
-  resolved "https://registry.yarnpkg.com/@spraoi/stylelint-config/-/stylelint-config-0.23.17.tgz#656debbbe0dacb9e612fb7a179eceeb737ecd5fa"
-  integrity sha512-MotpPpgR45YEKEXGvHRA6sjhrEVZegX81c2LEVlbo7OnGXmriqB9AuURpNLYgS1nF5rooPEH+kQAnPit5zlAKg==
+"@spraoi/stylelint-config@^0.23.18":
+  version "0.23.18"
+  resolved "https://registry.yarnpkg.com/@spraoi/stylelint-config/-/stylelint-config-0.23.18.tgz#e3b25da49448135c5a855e56022ab46fdc7f21e3"
+  integrity sha512-9qtkRBycs2bH2tcQdv0EJnpMKxIhxs99RqIuWriu0krOQ/iVyZWrek1lpoFf8iaJX9r28XagHMJP25RT32h0Kw==
   dependencies:
     stylelint-config-prettier "6.0.0"
     stylelint-config-recommended "3.0.0"
@@ -1449,10 +1449,10 @@
   resolved "https://registry.yarnpkg.com/@spraoi/svgo-config/-/svgo-config-0.23.0.tgz#7512145ffcd02852beacb968229891e4bf8dbdfe"
   integrity sha512-mPRW4E4EhDcvvbCSoloC5hjP6DVK2QhidS/iGCBFABD+5UjAWIHABOmVlHvBZaJszFF0/Kt4VmTBEJ3q9hDX0g==
 
-"@spraoi/validations@^0.23.0":
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/@spraoi/validations/-/validations-0.23.0.tgz#a1d61f7e9129de07bef7a136cab8db0005fdb33f"
-  integrity sha512-eAiTIepm+7oqhXZ+UHZPGh+BbXXgxVn1dIKG9VLkqKj+soDcXPtnw56hyT/Kt5QzvzWcwp0YyuXZBKfND9kmSg==
+"@spraoi/validations@^0.23.18":
+  version "0.23.18"
+  resolved "https://registry.yarnpkg.com/@spraoi/validations/-/validations-0.23.18.tgz#c1bc4e1f2cc1204747dd558bb4d177f44d801fc0"
+  integrity sha512-Wd+jNk0zGk3/Ja8FtxPkRLPULyBTB7S/ejm95VBKk54CZjmU14BDX+Zv+ro+OEe0ywhtWiTGKIT6wwwUpSLInQ==
   dependencies:
     validator "^11.1.0"
 
@@ -1742,10 +1742,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.8.12", "@types/react@^16.8.6", "@types/react@^16.9.7":
-  version "16.9.7"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.7.tgz#3b50cb38285a79fd325cf185e0d623e3e0dd2893"
-  integrity sha512-cF/zwVSOa/NQ5ZSLwUmAdeARgJkmu94shnqDO0dUOsp5roeS8SXtYv06uKeQMYgMjnP6dXH5CecxL+GibvqEFg==
+"@types/react@*", "@types/react@^16.8.12", "@types/react@^16.8.6", "@types/react@^16.9.9":
+  version "16.9.9"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.9.tgz#a62c6f40f04bc7681be5e20975503a64fe783c3a"
+  integrity sha512-L+AudFJkDukk+ukInYvpoAPyJK5q1GanFOINOJnM0w6tUgITuWvJ4jyoBPFL7z4/L8hGLd+K/6xR5uUjXu0vVg==
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"

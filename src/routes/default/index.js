@@ -1,5 +1,5 @@
+import Box from '@spraoi/base/Box';
 import React from 'react';
-import { Box } from '@spraoi/base';
 import Route from '../../components/Route';
 
 const IndexPage = () => (
