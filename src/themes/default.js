@@ -2,23 +2,25 @@
 
 import { darken, lighten } from 'polished';
 
+const black = '#222';
 const blue = '#0663B3';
 const blueDark = '#0B2238';
 const blueLight = '#2695F8';
 const green = '#3AC4AC';
 const orange = '#F19B6F';
 const red = '#E74C3C';
+const white = '#fefefe';
 const whiteMoreTransparent = 'rgba(255, 255, 255, 0.1)';
 const whiteTransparent = 'rgba(255, 255, 255, 0.4)';
 
-const white = '#fefefe';
-const gray1 = '#F5F6FA';
-const gray2 = '#EBEEF5';
-const gray3 = '#DFE4F0';
-const gray4 = '#BDC6DF';
-const gray5 = '#8190AD';
-const gray6 = '#2e2e31';
-const black = '#222';
+const grays = [
+  '#F5F6FA',
+  '#EBEEF5',
+  '#DFE4F0',
+  '#BDC6DF',
+  '#8190AD',
+  '#2e2e31',
+];
 
 const breakpoints = ['300px', '500px', '700px', '1200px', '1600px'];
 breakpoints.xs = breakpoints[0];
@@ -40,11 +42,11 @@ export default {
     accentSecondaryDark: darken(0.1, blue),
     accentSecondaryLight: lighten(0.1, blue),
     black,
-    body: gray2,
-    border: gray4,
+    body: grays[1],
+    border: grays[3],
     borderSecondary: whiteMoreTransparent,
     error: red,
-    grays: [gray1, gray2, gray3, gray4, gray5, gray6],
+    grays: [grays[0], grays[1], grays[2], grays[3], grays[4], grays[5]],
     primary: blueDark,
     primaryDark: darken(0.1, blueDark),
     primaryLight: lighten(0.1, blueDark),
@@ -53,7 +55,7 @@ export default {
       heading: blueDark,
       link: blueLight,
       primary: lighten(0.05, blueDark),
-      subtle: gray5,
+      subtle: grays[4],
       subtleSecondary: whiteTransparent,
     },
     warning: orange,
