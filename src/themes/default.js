@@ -46,7 +46,7 @@ export default {
     border: grays[3],
     borderSecondary: whiteMoreTransparent,
     error: red,
-    grays: [grays[0], grays[1], grays[2], grays[3], grays[4], grays[5]],
+    grays,
     primary: blueDark,
     primaryDark: darken(0.1, blueDark),
     primaryLight: lighten(0.1, blueDark),
