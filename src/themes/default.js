@@ -87,7 +87,7 @@ export default {
     '0 20px 60px rgba(0, 0, 0, 0.4)',
   ],
   sizes: {
-    heights: { input: p => `calc(${p.lineHeights[2]} + ${p.space[4]} * 2)` },
+    heights: { input: `calc(1.6em + 0.75rem * 2)` },
     maxWidths: { content: '1168px', form: '400px' },
   },
   space: [
