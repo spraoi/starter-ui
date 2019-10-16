@@ -3,7 +3,7 @@
   "name": "starter-ui",
   "scripts": {
     "build": "gatsby build",
-    "clean": "rm -rf node_modules public .cache",
+    "clean": "rm -rf node_modules coverage reports public .cache",
     "deploy": "spraoi deploy -c $config",
     "format": "yarn prettier && yarn svgo",
     "lint": "yarn lint:js && yarn lint:styles",
