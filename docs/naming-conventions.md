@@ -1,6 +1,6 @@
 # Naming Conventions
 
-## GraphQL Queries, Mutations & Subscription
+## GraphQL Queries, Mutations & Subscriptions
 
 | Type           | Name                   | File                                       |
 | :------------- | :--------------------- | :----------------------------------------- |
