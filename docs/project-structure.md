@@ -105,5 +105,7 @@ us:
 Themes are used by components in this repo as well as any
 [common-ui](https://github.com/spraoi/common-ui) components that have styles
 associated with them. This makes it easy to maintain consistency across any
-given UI/UI variation. The theme object shape can be seen/modified in the
-[base `<App />` component](https://github.com/spraoi/common-ui/blob/master/packages/base/components/App/types.js).
+given UI/UI variation. We use
+[styled-components](https://www.styled-components.com/docs/advanced#theming) &
+the [Reflexbox Box component](https://rebassjs.org/reflexbox/) to take
+advantange of theme objects.
