@@ -10,8 +10,8 @@ developer happiness.
 
 ## [`configs/`](https://github.com/spraoi/starter-ui/tree/master/configs)
 
-Here you will find the configuration files used to generate `./src/config.json`.
-Inheritance is as follows:
+Here you will find the configuration files used to generate `./src/config.json`
+when you run `yarn start`. Inheritance is as follows:
 
 1. `default.yml` (lowest priority)
 2. `default.[stage].yml`
