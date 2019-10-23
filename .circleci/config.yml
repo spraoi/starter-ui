@@ -71,20 +71,20 @@ jobs:
       - attach_workspace:
           at: .
       - run: config=<<parameters.variation>>.<<parameters.env>> yarn deploy
-#workflows:
-#  version: 2.1
-#  build-test-deploy:
-#    jobs:
-#      - install:
-#          filters:
-#            tags:
-#              only: /^v\d+\.\d+\.\d+$/
-#      - test:
-#          requires:
-#            - install
-#          filters:
-#            tags:
-#              only: /^v\d+\.\d+\.\d+$/
+workflows:
+  version: 2.1
+  build-test-deploy:
+    jobs:
+      - install:
+          filters:
+            tags:
+              only: /^v\d+\.\d+\.\d+$/
+      - test:
+          requires:
+            - install
+          filters:
+            tags:
+              only: /^v\d+\.\d+\.\d+$/
 #      - build:
 #          name: build-spraoi-dev
 #          variation: spraoi
@@ -114,3 +114,38 @@ jobs:
 #              ignore: /.*/
 #          requires:
 #            - install
+#     - deploy:
+#         name: deploy-spraoi-dev
+#         variation: spraoi
+#         env: dev
+#         context: spraoi-context
+#         filters:
+#           branches:
+#             only: develop
+#         requires:
+#           - build-spraoi-dev
+#           - test
+#     - deploy:
+#         name: deploy-spraoi-qa
+#         variation: spraoi
+#         env: qa
+#         context: spraoi-context
+#         filters:
+#           branches:
+#             only: master
+#         requires:
+#           - build-spraoi-qa
+#           - test
+#     - deploy:
+#         name: deploy-spraoi-prod
+#         variation: spraoi
+#         env: prod
+#         context: spraoi-context
+#         filters:
+#           tags:
+#             only: /^v\d+\.\d+\.\d+$/
+#           branches:
+#             ignore: /.*/
+#         requires:
+#           - build-spraoi-prod
+#           - test
