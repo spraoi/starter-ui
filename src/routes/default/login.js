@@ -3,18 +3,13 @@ import React from 'react';
 import Redirect from '@spraoi/base/Redirect';
 import { FORM_ERROR } from 'final-form';
 import { Field, Form as FinalForm } from 'react-final-form';
+import { composeValidations, email, minLength, required } from '@spraoi/validations';
 import AuthContainer from '../../containers/AuthContainer';
 import Form from '../../components/Form';
 import FormError from '../../components/FormError';
 import FormHeading from '../../components/FormHeading';
 import SubmitButton from '../../components/SubmitButton';
 import config from '../../config';
-import {
-  composeValidations,
-  email,
-  minLength,
-  required,
-} from '@spraoi/validations';
 
 const LoginPage = () => (
   <AuthContainer>
