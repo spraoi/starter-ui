@@ -8,6 +8,11 @@ developer happiness.
 - `[stage]` is usually one of `dev`, `qa`, `demo` or `prod`
 - `[variation]` is usually the name of the client the variation is for
 
+## [`.circleci/`](https://github.com/spraoi/starter-ui/tree/master/.circleci)
+
+[CircleCI](https://circleci.com/) configuration. We use CircleCI to build, test
+and deploy our projects automatically.
+
 ## [`configs/`](https://github.com/spraoi/starter-ui/tree/master/configs)
 
 Configuration files used to generate `./src/config.json` when you run
