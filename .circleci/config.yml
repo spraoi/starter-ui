@@ -71,46 +71,46 @@ jobs:
       - attach_workspace:
           at: .
       - run: config=<<parameters.variation>>.<<parameters.env>> yarn deploy
-workflows:
-  version: 2.1
-  build-test-deploy:
-    jobs:
-      - install:
-          filters:
-            tags:
-              only: /^v\d+\.\d+\.\d+$/
-      - test:
-          requires:
-            - install
-          filters:
-            tags:
-              only: /^v\d+\.\d+\.\d+$/
-      - build:
-          name: build-placement-fidelity-dev
-          variation: placement-fidelity
-          env: dev
-          filters:
-            branches:
-              only: develop
-          requires:
-            - install
-      - build:
-          name: build-placement-fidelity-qa
-          variation: placement-fidelity
-          env: qa
-          filters:
-            branches:
-              only: master
-          requires:
-            - install
-      - build:
-          name: build-placement-fidelity-prod
-          variation: placement-fidelity
-          env: prod
-          filters:
-            tags:
-              only: /^v\d+\.\d+\.\d+$/
-            branches:
-              ignore: /.*/
-          requires:
-            - install
+#workflows:
+#  version: 2.1
+#  build-test-deploy:
+#    jobs:
+#      - install:
+#          filters:
+#            tags:
+#              only: /^v\d+\.\d+\.\d+$/
+#      - test:
+#          requires:
+#            - install
+#          filters:
+#            tags:
+#              only: /^v\d+\.\d+\.\d+$/
+#      - build:
+#          name: build-spraoi-dev
+#          variation: spraoi
+#          env: dev
+#          filters:
+#            branches:
+#              only: develop
+#          requires:
+#            - install
+#      - build:
+#          name: build-spraoi-qa
+#          variation: spraoi
+#          env: qa
+#          filters:
+#            branches:
+#              only: master
+#          requires:
+#            - install
+#      - build:
+#          name: build-spraoi-prod
+#          variation: spraoi
+#          env: prod
+#          filters:
+#            tags:
+#              only: /^v\d+\.\d+\.\d+$/
+#            branches:
+#              ignore: /.*/
+#          requires:
+#            - install
