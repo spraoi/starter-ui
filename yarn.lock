@@ -1348,12 +1348,12 @@
   resolved "https://registry.yarnpkg.com/@spraoi/babel-preset/-/babel-preset-0.23.0.tgz#88dac3c6383754463b02889a07b772fb56196a07"
   integrity sha512-9VY9OGEw0xxKmHBnNdhTbzxNQPxFGRgP0IO1M3FZbPbKInmTujyF2YXU2JZT9N+Kyg6eMOzm1pNQl0RBCbVSxA==
 
-"@spraoi/base@^0.23.20":
-  version "0.23.20"
-  resolved "https://registry.yarnpkg.com/@spraoi/base/-/base-0.23.20.tgz#afe194dff713b29f9c2be2cbf2f5d577af0f5d2f"
-  integrity sha512-UTjiX4Wj+6wP9ksCdCgNFK03IJzqQR2s6vaC/w5zAlXbL7YeJ3quDGjWm1l1W3vQQz1MgSsGSR9lbTiE9nV1Ug==
+"@spraoi/base@^0.23.22":
+  version "0.23.22"
+  resolved "https://registry.yarnpkg.com/@spraoi/base/-/base-0.23.22.tgz#d5b92a6d1745c7a4e30507a5f6e038cbc9f2fe63"
+  integrity sha512-kXpnK5yshRW6nwSnM0Wr9x6EvoAPSc8oa22SWioAvitOBFqIy/56MJ0FPmMEp5PPICX+b1ROaMkYu6RsqHpsTQ==
   dependencies:
-    "@spraoi/file-upload" "^0.23.20"
+    "@spraoi/file-upload" "^0.23.22"
     "@wojtekmaj/react-daterange-picker" "^2.4.0"
     apollo-cache-inmemory "^1.6.3"
     apollo-link-context "^1.0.19"
@@ -1386,10 +1386,10 @@
     eslint-plugin-react "^7.14.3"
     eslint-plugin-react-hooks "^1.7.0"
 
-"@spraoi/file-upload@^0.23.20":
-  version "0.23.20"
-  resolved "https://registry.yarnpkg.com/@spraoi/file-upload/-/file-upload-0.23.20.tgz#e8bfad18532e6617c2c753ce30cd25ceae3ee3c9"
-  integrity sha512-OazYuVOgFvdxo9e/pFb/WP5o1e1asNA9YrcrWeCgn+ShLSCLYbbtvbw92x1FF+lx90J3wU5nFOoSQFuPl/cYvg==
+"@spraoi/file-upload@^0.23.22":
+  version "0.23.22"
+  resolved "https://registry.yarnpkg.com/@spraoi/file-upload/-/file-upload-0.23.22.tgz#245b01850a731e9fd0a44685c7d84091d113a408"
+  integrity sha512-TM/5AdF3zlgXxbb3HOdr1KasztyJyHegKiDF/rBAqJMTowyefVio8PzGo9nONVOyqAoqnZ0HupTCAuVNwlEkog==
   dependencies:
     filepond "^4.7.0"
     filepond-plugin-file-rename "^1.1.4"
