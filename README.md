@@ -1,4 +1,4 @@
-# Starter UI
+# Starter UI [![CircleCI](https://circleci.com/gh/spraoi/starter-ui/tree/master.svg?style=svg&circle-token=874a7684814a5f1f04957241b180a1c9deb5579d)](https://circleci.com/gh/spraoi/starter-ui/tree/master)
 
 > A starting point for new [@spraoi](https://github.com/spraoi/) UI projects.
 

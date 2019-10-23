@@ -2,7 +2,7 @@ import Box from '@spraoi/base/Box';
 import React from 'react';
 
 const NotFoundPage = () => (
-  <Box as="h1" fontSize={5} my={8}>
+  <Box as="h1" fontSize={5} my={8} textAlign="center">
     404:{' '}
     <Box as="span" fontWeight="normal">
       Page not found.{' '}
