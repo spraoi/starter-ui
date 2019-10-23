@@ -1,0 +1,116 @@
+version: 2.1
+jobs:
+  install:
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node-modules-{{ checksum "package.json" }}
+      - run: yarn
+      - save_cache:
+          paths:
+            - node_modules
+          key: node-modules-{{ checksum "package.json" }}
+      - persist_to_workspace:
+          root: .
+          paths:
+            - node_modules
+  test:
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run:
+          command: |
+            touch src/config.json
+            mkdir -p src/components/Icon && touch src/components/Icon/index.js
+            yarn lint
+            yarn test
+      - store_test_results:
+          path: reports
+      - store_artifacts:
+          path: coverage
+  build:
+    docker:
+      - image: circleci/node:latest
+    parameters:
+      env:
+        type: string
+      variation:
+        type: string
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - restore_cache:
+          keys:
+            - gatsby-cache-<<parameters.variation>>-<<parameters.env>>
+      - run: config=<<parameters.variation>>.<<parameters.env>> yarn build
+      - save_cache:
+          paths:
+            - .cache
+          key: gatsby-cache-<<parameters.variation>>-<<parameters.env>>
+      - persist_to_workspace:
+          root: .
+          paths:
+            - public
+  deploy:
+    docker:
+      - image: travnels/circleci-nodejs-awscli:latest
+    parameters:
+      env:
+        type: string
+      variation:
+        type: string
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run: config=<<parameters.variation>>.<<parameters.env>> yarn deploy
+workflows:
+  version: 2.1
+  build-test-deploy:
+    jobs:
+      - install:
+          filters:
+            tags:
+              only: /^v\d+\.\d+\.\d+$/
+      - test:
+          requires:
+            - install
+          filters:
+            tags:
+              only: /^v\d+\.\d+\.\d+$/
+      - build:
+          name: build-placement-fidelity-dev
+          variation: placement-fidelity
+          env: dev
+          filters:
+            branches:
+              only: develop
+          requires:
+            - install
+      - build:
+          name: build-placement-fidelity-qa
+          variation: placement-fidelity
+          env: qa
+          filters:
+            branches:
+              only: master
+          requires:
+            - install
+      - build:
+          name: build-placement-fidelity-prod
+          variation: placement-fidelity
+          env: prod
+          filters:
+            tags:
+              only: /^v\d+\.\d+\.\d+$/
+            branches:
+              ignore: /.*/
+          requires:
+            - install
