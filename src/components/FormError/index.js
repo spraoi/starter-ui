@@ -4,7 +4,7 @@ import React from 'react';
 
 const FormError = ({ children, ...rest }) =>
   children ? (
-    <Box color="error" {...rest}>
+    <Box color="error" mt={5} textAlign="center" {...rest}>
       {children}
     </Box>
   ) : null;

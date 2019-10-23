@@ -42,7 +42,7 @@ export default {
     accentSecondaryDark: darken(0.1, blue),
     accentSecondaryLight: lighten(0.1, blue),
     black,
-    body: grays[1],
+    body: white,
     border: grays[3],
     borderSecondary: whiteMoreTransparent,
     error: red,
