@@ -5,3 +5,6 @@ amplify:
     userPoolWebClientId: 7gno9p681khrlit1nat44g57m
 apollo:
   url: https://dnlytt6x2va5bbvock2kcrdmd4.appsync-api.us-east-1.amazonaws.com/graphql
+deploy:
+  bucketUrl: foo
+  cloudFrontDistributionId: foo
