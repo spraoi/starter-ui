@@ -29,6 +29,7 @@
     "@spraoi/gatsby-config": "^0.23.43",
     "@spraoi/helpers": "^0.23.43",
     "@spraoi/scripts": "^0.23.48",
+    "@spraoi/svgo-config": "^0.23.43",
     "@spraoi/validations": "^0.23.43",
     "@types/react": "^16.9.17",
     "@vx/responsive": "^0.0.192",
@@ -62,7 +63,7 @@
     "svgo": "^1.3.2"
   },
   "devDependencies": {
-    "@spraoi/eslint-config": "^0.23.43",
+    "@spraoi/eslint-config": "^0.23.49",
     "@spraoi/jest-config": "^0.23.43",
     "@spraoi/prettier-config": "^0.23.43",
     "@spraoi/stylelint-config": "^0.23.43",

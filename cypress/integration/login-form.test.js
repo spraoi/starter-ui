@@ -12,8 +12,6 @@ describe('login form', () => {
 
     cy.get('[data-cy=submit]').click();
 
-    cy.location('pathname').should(pathname =>
-      expect(pathname).to.equal('/')
-    );
+    cy.location('pathname').should(pathname => expect(pathname).to.equal('/'));
   });
 });
