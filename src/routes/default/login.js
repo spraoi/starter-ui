@@ -33,12 +33,14 @@ const LoginPage = () => (
             <FormHeading>Sign In</FormHeading>
             <Field
               component={Input}
+              data-cy="email"
               label="Email"
               name="username"
               validate={composeValidations(required, email)}
             />
             <Field
               component={Input}
+              data-cy="password"
               label="Password"
               name="password"
               type="password"
@@ -48,7 +50,7 @@ const LoginPage = () => (
               )}
             />
             <FormError>{formContext.submitError}</FormError>
-            <SubmitButton submitting={formContext.submitting}>
+            <SubmitButton data-cy="submit" submitting={formContext.submitting}>
               Sign In
             </SubmitButton>
           </Form>

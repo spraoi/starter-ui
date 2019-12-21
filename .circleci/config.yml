@@ -7,33 +7,48 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - node-modules-{{ checksum "package.json" }}
+            - cache-{{ checksum "yarn.lock" }}
       - run: yarn
       - save_cache:
           paths:
-            - node_modules
-          key: node-modules-{{ checksum "package.json" }}
+            - ~/.cache
+          key: cache-{{ checksum "yarn.lock" }}
       - persist_to_workspace:
-          root: .
+          root: ~/
           paths:
-            - node_modules
+            - .cache/Cypress
+            - project
+    working_directory: ~/project
   test:
     docker:
       - image: circleci/node:latest
     steps:
       - checkout
       - attach_workspace:
-          at: .
+          at: ~/
       - run:
           command: |
             touch src/config.json
             mkdir -p src/components/Icon && touch src/components/Icon/index.js
             yarn lint
-          #  yarn test
+            yarn test
       - store_test_results:
           path: reports
       - store_artifacts:
           path: coverage
+    working_directory: ~/project
+  test-e2e:
+    docker:
+      - image: cypress/base:12.13.0
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/
+      - run:
+          command: yarn test:e2e
+      - store_artifacts:
+          path: cypress/videos
+    working_directory: ~/project
   build:
     docker:
       - image: circleci/node:latest
@@ -45,19 +60,14 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: .
-      - restore_cache:
-          keys:
-            - gatsby-cache-<<parameters.variation>>-<<parameters.env>>
+          at: ~/
       - run: config=<<parameters.variation>>.<<parameters.env>> yarn build
-      - save_cache:
-          paths:
-            - .cache
-          key: gatsby-cache-<<parameters.variation>>-<<parameters.env>>
       - persist_to_workspace:
-          root: .
+          root: ~/
           paths:
-            - public
+            - .cache/Cypress
+            - project
+    working_directory: ~/project
   deploy:
     docker:
       - image: travnels/circleci-nodejs-awscli:latest
@@ -69,83 +79,25 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: .
+          at: ~/
       - run: config=<<parameters.variation>>.<<parameters.env>> yarn deploy
+    working_directory: ~/project
 workflows:
   version: 2.1
   build-test-deploy:
     jobs:
-      - install:
-          filters:
-            tags:
-              only: /^v\d+\.\d+\.\d+$/
+      - install
       - test:
           requires:
             - install
-          filters:
-            tags:
-              only: /^v\d+\.\d+\.\d+$/
-#      - build:
-#          name: build-spraoi-dev
-#          variation: spraoi
-#          env: dev
-#          filters:
-#            branches:
-#              only: develop
-#          requires:
-#            - install
-#      - build:
-#          name: build-spraoi-qa
-#          variation: spraoi
-#          env: qa
-#          filters:
-#            branches:
-#              only: master
-#          requires:
-#            - install
-#      - build:
-#          name: build-spraoi-prod
-#          variation: spraoi
-#          env: prod
-#          filters:
-#            tags:
-#              only: /^v\d+\.\d+\.\d+$/
-#            branches:
-#              ignore: /.*/
-#          requires:
-#            - install
-#     - deploy:
-#         name: deploy-spraoi-dev
-#         variation: spraoi
-#         env: dev
-#         context: spraoi-context
-#         filters:
-#           branches:
-#             only: develop
-#         requires:
-#           - build-spraoi-dev
-#           - test
-#     - deploy:
-#         name: deploy-spraoi-qa
-#         variation: spraoi
-#         env: qa
-#         context: spraoi-context
-#         filters:
-#           branches:
-#             only: master
-#         requires:
-#           - build-spraoi-qa
-#           - test
-#     - deploy:
-#         name: deploy-spraoi-prod
-#         variation: spraoi
-#         env: prod
-#         context: spraoi-context
-#         filters:
-#           tags:
-#             only: /^v\d+\.\d+\.\d+$/
-#           branches:
-#             ignore: /.*/
-#         requires:
-#           - build-spraoi-prod
-#           - test
+      - build:
+          name: build-spraoi-dev
+          variation: spraoi
+          env: dev
+          requires:
+            - install
+      - test-e2e:
+          name: test-e2e-spraoi-dev
+          requires:
+            - build-spraoi-dev
+            - test
