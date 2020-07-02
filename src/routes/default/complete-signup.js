@@ -15,14 +15,14 @@ const CompleteSignupPage = () => (
   <AuthContainer>
     {({ completeNewPasswordChallenge, newPasswordRequired }) => (
       <FinalForm
-        onSubmit={async values => {
+        onSubmit={async (values) => {
           try {
             await completeNewPasswordChallenge(values);
           } catch (e) {
             return { [FORM_ERROR]: e.message };
           }
         }}
-        render={formContext => (
+        render={(formContext) => (
           <Form onSubmit={formContext.handleSubmit}>
             <Redirect to="/login" when={!newPasswordRequired} />
             <FormHeading>Complete Signup</FormHeading>

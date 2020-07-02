@@ -20,14 +20,14 @@ const LoginPage = () => (
   <AuthContainer>
     {({ newPasswordRequired, signIn }) => (
       <FinalForm
-        onSubmit={async values => {
+        onSubmit={async (values) => {
           try {
             await signIn(values);
           } catch (e) {
             return { [FORM_ERROR]: e.message };
           }
         }}
-        render={formContext => (
+        render={(formContext) => (
           <Form onSubmit={formContext.handleSubmit}>
             <Redirect to="/complete-signup" when={newPasswordRequired} />
             <FormHeading>Sign In</FormHeading>
