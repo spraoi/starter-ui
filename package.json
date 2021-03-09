@@ -31,7 +31,7 @@
     "@spraoi/scripts": "^0.29.8",
     "@spraoi/svgo-config": "^0.29.0",
     "@spraoi/validations": "^0.29.0",
-    "@types/react": "^16.9.41",
+    "@types/react": "^16.14.4",
     "@vx/responsive": "^0.0.197",
     "apollo-cache": "^1.3.5",
     "apollo-client": "^2.6.10",
